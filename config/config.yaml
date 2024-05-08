@@ -1,1 +1,61 @@
 #config_version=6
+
+# mike is using this for the numbers
+# https://fastpinball.com/cookbook/lower-third/
+
+hardware:
+  platform: fast
+  driverboards: fast
+
+fast:
+  ports: com4, com5
+
+switches:
+  s_left_flipper:
+    number: 27
+    tags: left_flipper
+  s_right_flipper:
+    number: 24
+    tags: right_flipper
+  s_top_right_flipper:
+    number: #TODO
+    tags: top_right_flipper
+
+coils:
+  c_flipper_left_main:
+    number: # again, these numbers will probably be different for you TODO
+  c_flipper_left_hold:
+    number: # check your platform-specific documentation for the actual numbers TODO
+    allow_enable: true
+  c_flipper_right_main:
+    number: #TODO
+  c_flipper_right_hold:
+    number: #TODO
+    allow_enable: true
+  c_flipper_top_right_main:
+    number: #TODO
+  c_flipper_top_right_hold:
+    number: #TODO
+    allow_enable: true
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: None # use None in steps before 8
+
+flippers:
+  left_flipper:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_left_flipper
+    enable_events: machine_reset_phase_3
+  right_flipper:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_right_flipper
+    enable_events: machine_reset_phase_3
+  top_right_flipper:
+    main_coil: c_flipper_top_right_main
+    hold_coil: c_flipper_top_right_hold
+    activation_switch: s_top_right_flipper
+    enable_events: machine_reset_phase_3

@@ -1,0 +1,5 @@
+**/*.log
+**/*.local.log
+
+# mac files
+*.DS_Store
