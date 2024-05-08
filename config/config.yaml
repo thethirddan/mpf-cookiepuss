@@ -2,6 +2,7 @@
 
 # mike is using this for the numbers
 # https://fastpinball.com/cookbook/lower-third/
+# https://fastpinball.com/mpf/config/net/
 
 hardware:
   platform: fast
