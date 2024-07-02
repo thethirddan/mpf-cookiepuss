@@ -36,13 +36,13 @@ switches:
 coils:
   c_flipper_left_main:
     number: 3208-3
-    default_pulse_ms: 14
+    default_pulse_ms: 16
   c_flipper_left_hold:
     number: 3208-2
     allow_enable: true
   c_flipper_right_main:
     number: 3208-5
-    default_pulse_ms: 14
+    default_pulse_ms: 16
   c_flipper_right_hold:
     number: 3208-4
     allow_enable: true
