@@ -9,35 +9,47 @@ hardware:
   driverboards: fast
 
 fast:
-  ports: com4, com5
+  net:
+    controller: neuron
+    io_loop:
+      cab:
+        model: FP-I/O-0024
+        order: 1
+      "3208":
+        model: FP-I/O-3208
+        order: 2
+      
 
 switches:
   s_left_flipper:
-    number: 27
+    number: cab-8
     tags: left_flipper
   s_right_flipper:
-    number: 24
+    number: cab-9
     tags: right_flipper
-  s_top_right_flipper:
-    number: #TODO
-    tags: top_right_flipper
+  s_start:
+    number: cab-11
+    tags: start
+  #s_top_right_flipper:
+  #  number: cab-10
+  #  tags: top_right_flipper
 
 coils:
   c_flipper_left_main:
-    number: # again, these numbers will probably be different for you TODO
+    number: 3208-3
   c_flipper_left_hold:
-    number: # check your platform-specific documentation for the actual numbers TODO
+    number: 3208-2
     allow_enable: true
   c_flipper_right_main:
-    number: #TODO
+    number: 3208-5
   c_flipper_right_hold:
-    number: #TODO
+    number: 3208-4
     allow_enable: true
-  c_flipper_top_right_main:
-    number: #TODO
-  c_flipper_top_right_hold:
-    number: #TODO
-    allow_enable: true
+  # c_flipper_top_right_main:
+  #  number: #TODO
+  #c_flipper_top_right_hold:
+  #  number: #TODO
+  #  allow_enable: true
 
 playfields:
   playfield:
@@ -55,8 +67,8 @@ flippers:
     hold_coil: c_flipper_right_hold
     activation_switch: s_right_flipper
     enable_events: machine_reset_phase_3
-  top_right_flipper:
-    main_coil: c_flipper_top_right_main
-    hold_coil: c_flipper_top_right_hold
-    activation_switch: s_top_right_flipper
-    enable_events: machine_reset_phase_3
+#  top_right_flipper:
+#    main_coil: c_flipper_top_right_main
+#    hold_coil: c_flipper_top_right_hold
+#    activation_switch: s_top_right_flipper
+#    enable_events: machine_reset_phase_3
