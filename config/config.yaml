@@ -18,7 +18,6 @@ fast:
       "3208":
         model: FP-I/O-3208
         order: 2
-      
 
 switches:
   s_left_flipper:
@@ -37,11 +36,13 @@ switches:
 coils:
   c_flipper_left_main:
     number: 3208-3
+    default_pulse_ms: 14
   c_flipper_left_hold:
     number: 3208-2
     allow_enable: true
   c_flipper_right_main:
     number: 3208-5
+    default_pulse_ms: 14
   c_flipper_right_hold:
     number: 3208-4
     allow_enable: true
