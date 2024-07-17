@@ -46,6 +46,9 @@ coils:
   c_flipper_right_hold:
     number: 3208-4
     allow_enable: true
+  c_trough_eject:
+    number: 3208-1
+    default_pulse_ms: 20
   # c_flipper_top_right_main:
   #  number: #TODO
   #c_flipper_top_right_hold:
@@ -55,7 +58,7 @@ coils:
 playfields:
   playfield:
     tags: default
-    default_source_device: None # use None in steps before 8
+    default_source_device: bd_plunger
 
 flippers:
   left_flipper:
@@ -73,3 +76,47 @@ flippers:
 #    hold_coil: c_flipper_top_right_hold
 #    activation_switch: s_top_right_flipper
 #    enable_events: machine_reset_phase_3
+
+switches:
+  s_trough1:
+    number: 3208-0
+    type: NC
+  s_trough2:
+    number: 3208-1
+  s_trough3:
+    number: 3208-2
+  s_trough4:
+    number: 3208-3
+  s_trough5:
+    number: 3208-4
+  s_trough6:
+    number: 3208-5
+  s_trough_jam:
+    number: 3208-6
+    type: NC
+  s_plunger:
+    number: 3208-6
+
+
+
+ball_devices:
+  bd_trough:
+     ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam
+     eject_coil: c_trough_eject
+     tags: trough, home, drain
+     jam_switch: s_trough_jam
+     eject_coil_jam_pulse: 15ms
+     eject_targets: bd_plunger
+     eject_timeouts: 3s
+   bd_plunger:
+     ball_switches: s_plunger
+     mechanical_eject: true
+     eject_timeouts: 5s
+
+virtual_platform_start_active_switches:
+  - s_trough1
+  - s_trough2
+  - s_trough3
+  - s_trough4
+  - s_trough5
+  - s_trough6
