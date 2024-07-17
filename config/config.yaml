@@ -35,19 +35,19 @@ switches:
 
 coils:
   c_flipper_left_main:
-    number: 3208-3
+    number: 3208-D3
     default_pulse_ms: 16
   c_flipper_left_hold:
-    number: 3208-2
+    number: 3208-D2
     allow_enable: true
   c_flipper_right_main:
-    number: 3208-5
+    number: 3208-D5
     default_pulse_ms: 16
   c_flipper_right_hold:
-    number: 3208-4
+    number: 3208-D4
     allow_enable: true
   c_trough_eject:
-    number: 3208-1
+    number: 3208-D1
     default_pulse_ms: 20
   # c_flipper_top_right_main:
   #  number: #TODO
@@ -95,23 +95,21 @@ switches:
     number: 3208-6
     type: NC
   s_plunger:
-    number: 3208-6
-
-
+    number: 3208-7
 
 ball_devices:
   bd_trough:
-     ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam
-     eject_coil: c_trough_eject
-     tags: trough, home, drain
-     jam_switch: s_trough_jam
-     eject_coil_jam_pulse: 15ms
-     eject_targets: bd_plunger
-     eject_timeouts: 3s
-   bd_plunger:
-     ball_switches: s_plunger
-     mechanical_eject: true
-     eject_timeouts: 5s
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam
+    eject_coil: c_trough_eject
+    tags: trough, home, drain
+    jam_switch: s_trough_jam
+    eject_coil_jam_pulse: 15ms
+    eject_targets: bd_plunger
+    eject_timeouts: 3s
+  bd_plunger:
+    ball_switches: s_plunger
+    mechanical_eject: true
+    eject_timeouts: 5s
 
 virtual_platform_start_active_switches:
   - s_trough1
