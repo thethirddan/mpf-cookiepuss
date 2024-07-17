@@ -29,25 +29,43 @@ switches:
   s_start:
     number: cab-11
     tags: start
+  s_trough1:
+    number: 3208-0
+    type: NC
+  s_trough2:
+    number: 3208-1
+  s_trough3:
+    number: 3208-2
+  s_trough4:
+    number: 3208-3
+  s_trough5:
+    number: 3208-4
+  s_trough6:
+    number: 3208-5
+  s_trough_jam:
+    number: 3208-6
+    type: NC
+  s_plunger:
+    number: 3208-7
   #s_top_right_flipper:
   #  number: cab-10
   #  tags: top_right_flipper
 
 coils:
   c_flipper_left_main:
-    number: 3208-D3
+    number: 3208-3
     default_pulse_ms: 16
   c_flipper_left_hold:
-    number: 3208-D2
+    number: 3208-2
     allow_enable: true
   c_flipper_right_main:
-    number: 3208-D5
+    number: 3208-5
     default_pulse_ms: 16
   c_flipper_right_hold:
-    number: 3208-D4
+    number: 3208-4
     allow_enable: true
   c_trough_eject:
-    number: 3208-D1
+    number: 3208-1
     default_pulse_ms: 20
   # c_flipper_top_right_main:
   #  number: #TODO
@@ -76,26 +94,6 @@ flippers:
 #    hold_coil: c_flipper_top_right_hold
 #    activation_switch: s_top_right_flipper
 #    enable_events: machine_reset_phase_3
-
-switches:
-  s_trough1:
-    number: 3208-0
-    type: NC
-  s_trough2:
-    number: 3208-1
-  s_trough3:
-    number: 3208-2
-  s_trough4:
-    number: 3208-3
-  s_trough5:
-    number: 3208-4
-  s_trough6:
-    number: 3208-5
-  s_trough_jam:
-    number: 3208-6
-    type: NC
-  s_plunger:
-    number: 3208-7
 
 ball_devices:
   bd_trough:
