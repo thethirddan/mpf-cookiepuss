@@ -168,3 +168,6 @@ keyboard:
   p:
     switch: s_plunger
     toggle: true
+
+modes:
+  - base

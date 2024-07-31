@@ -1,0 +1,31 @@
+events:
+  game_ended: 0
+  game_started: 3
+missing_switches:
+  s_left_flipper: 2
+  s_left_outlane: 3
+  s_right_flipper: 2
+  s_start: 3
+player:
+  score:
+    average: 0
+    top: []
+    total: 0
+switches:
+  s_left_flipper: 16
+  s_left_inlane: 5
+  s_left_outlane: 0
+  s_left_slingshot: 8
+  s_plunger: 7
+  s_right_flipper: 25
+  s_right_inlane: 3
+  s_right_outlane: 1
+  s_right_slingshot: 11
+  s_start: 0
+  s_trough1: 4
+  s_trough2: 4
+  s_trough3: 2
+  s_trough4: 2
+  s_trough5: 2
+  s_trough6: 2
+  s_trough_jam: 4
