@@ -69,6 +69,9 @@ switches:
   s_top_right_flipper:
     number: cab-10
     tags: top_right_flipper
+  s_right_lower_pop:
+    number: 0804-0
+    tags: playfield_active
 
 coils:
   c_flipper_left_main:
@@ -94,6 +97,8 @@ coils:
     number: 0804-0
   c_flipper_top_right_hold:
     number: 0804-1
+  c_right_lower_pop:
+    number: 0804-2
 
 playfields:
   playfield:
@@ -139,6 +144,10 @@ autofire_coils:
   right_slingshot:
     coil: c_right_slingshot
     switch: s_right_slingshot
+    enable_events: machine_reset_phase_3
+  right_lower_pop:
+    coil: c_right_lower_pop
+    switch: s_right_lower_pop
     enable_events: machine_reset_phase_3
 
 virtual_platform_start_active_switches:
