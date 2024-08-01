@@ -18,6 +18,9 @@ fast:
       "3208":
         model: FP-I/O-3208
         order: 2
+      "0804":
+        model: FP-I/O-0804
+        order: 3
 
 switches:
   s_left_flipper:
@@ -63,9 +66,9 @@ switches:
     number: 3208-15
   s_right_slingshot:
     number: 3208-9
-  #s_top_right_flipper:
-  #  number: cab-10
-  #  tags: top_right_flipper
+  s_top_right_flipper:
+    number: cab-10
+    tags: top_right_flipper
 
 coils:
   c_flipper_left_main:
@@ -87,11 +90,10 @@ coils:
     number: 3208-7
   c_right_slingshot:
     number: 3208-6
-  # c_flipper_top_right_main:
-  #  number: #TODO
-  #c_flipper_top_right_hold:
-  #  number: #TODO
-  #  allow_enable: true
+  c_flipper_top_right_main:
+    number: 0804-0
+  c_flipper_top_right_hold:
+    number: 0804-1
 
 playfields:
   playfield:
@@ -109,11 +111,11 @@ flippers:
     hold_coil: c_flipper_right_hold
     activation_switch: s_right_flipper
     enable_events: machine_reset_phase_3
-#  top_right_flipper:
-#    main_coil: c_flipper_top_right_main
-#    hold_coil: c_flipper_top_right_hold
-#    activation_switch: s_top_right_flipper
-#    enable_events: machine_reset_phase_3
+  top_right_flipper:
+    main_coil: c_flipper_top_right_main
+    hold_coil: c_flipper_top_right_hold
+    activation_switch: s_top_right_flipper
+    enable_events: machine_reset_phase_3
 
 ball_devices:
   bd_trough:
