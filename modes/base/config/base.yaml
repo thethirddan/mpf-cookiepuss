@@ -14,3 +14,5 @@ variable_player:
     score: 50
   s_right_slingshot_active:
     score: 50
+  s_right_lower_pop_active:
+    score: 25
