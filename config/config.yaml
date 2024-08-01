@@ -71,7 +71,6 @@ switches:
     tags: top_right_flipper
   s_right_lower_pop:
     number: 0804-0
-    tags: playfield_active
 
 coils:
   c_flipper_left_main:
