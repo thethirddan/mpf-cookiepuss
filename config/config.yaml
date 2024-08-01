@@ -94,10 +94,13 @@ coils:
     number: 3208-6
   c_flipper_top_right_main:
     number: 0804-0
+    default_pulse_ms: 16
   c_flipper_top_right_hold:
     number: 0804-1
+    allow_enable: true
   c_right_lower_pop:
     number: 0804-2
+    default_pulse_ms: 16
 
 playfields:
   playfield:
