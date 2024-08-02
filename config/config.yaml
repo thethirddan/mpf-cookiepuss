@@ -112,17 +112,14 @@ flippers:
     main_coil: c_flipper_left_main
     hold_coil: c_flipper_left_hold
     activation_switch: s_left_flipper
-    enable_events: machine_reset_phase_3
   right_flipper:
     main_coil: c_flipper_right_main
     hold_coil: c_flipper_right_hold
     activation_switch: s_right_flipper
-    enable_events: machine_reset_phase_3
   top_right_flipper:
     main_coil: c_flipper_top_right_main
     hold_coil: c_flipper_top_right_hold
     activation_switch: s_top_right_flipper
-    enable_events: machine_reset_phase_3
 
 ball_devices:
   bd_trough:
@@ -142,15 +139,12 @@ autofire_coils:
   left_slingshot:
     coil: c_left_slingshot
     switch: s_left_slingshot
-    enable_events: machine_reset_phase_3
   right_slingshot:
     coil: c_right_slingshot
     switch: s_right_slingshot
-    enable_events: machine_reset_phase_3
   right_lower_pop:
     coil: c_right_lower_pop
     switch: s_right_lower_pop
-    enable_events: machine_reset_phase_3
 
 virtual_platform_start_active_switches:
   - s_trough1
