@@ -16,3 +16,5 @@ variable_player:
     score: 50
   s_right_lower_pop_active:
     score: 25
+  s_captive_ball:
+    score: 1000

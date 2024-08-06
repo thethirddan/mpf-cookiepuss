@@ -71,6 +71,8 @@ switches:
     tags: top_right_flipper
   s_right_lower_pop:
     number: 0804-0
+  s_captive_ball:
+    number: 0804-1
 
 coils:
   c_flipper_left_main:
