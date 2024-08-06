@@ -1,3 +1,4 @@
+# v0.0.1
 # mpf-cookiepuss
 
 # to run without hardware
