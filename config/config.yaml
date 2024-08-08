@@ -156,6 +156,36 @@ virtual_platform_start_active_switches:
   - s_trough5
   - s_trough6
 
+displays:
+  window:
+    width: 800
+    height: 600
+##! test
+#! advance_time_and_run .1
+
+slides:
+  welcome_slide:
+    widgets:
+      - type: text
+        text: PINBALL!
+        font_size: 50
+        color: red
+      - type: rectangle
+        width: 240
+        height: 60
+  attract_started:
+    widgets:
+      - text: ATTRACT MODE
+        type: text
+slide_player:
+  show_slide_event: welcome_slide
+  mode_attract_started: attract_started
+##! test
+#! post show_slide_event
+#! advance_time_and_run .1
+#! assert_slide_on_top welcome_slide
+#! assert_text_on_top_slide PINBALL!
+
 keyboard:
   s:
     switch: s_start
