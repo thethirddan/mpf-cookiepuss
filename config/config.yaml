@@ -37,6 +37,7 @@ switches:
     tags: start
   s_tilt_bob:
     number: cab-12
+    tags: tilt_warning
   s_trough1:
     number: 3208-0
     type: NC
@@ -229,3 +230,4 @@ keyboard:
 
 modes:
   - base
+  - tilt

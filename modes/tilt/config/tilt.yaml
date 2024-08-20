@@ -1,0 +1,4 @@
+tilt:
+  multiple_hit_window: 300ms
+  settle_time: 5s
+  warnings_to_tilt: 3
