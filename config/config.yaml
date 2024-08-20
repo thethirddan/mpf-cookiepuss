@@ -29,9 +29,14 @@ switches:
   s_right_flipper:
     number: cab-9
     tags: right_flipper
+  s_top_right_flipper:
+    number: cab-10
+    tags: top_right_flipper
   s_start:
     number: cab-11
     tags: start
+  s_tilt_bob:
+    number: cab-12
   s_trough1:
     number: 3208-0
     type: NC
@@ -66,13 +71,20 @@ switches:
     number: 3208-15
   s_right_slingshot:
     number: 3208-9
-  s_top_right_flipper:
-    number: cab-10
-    tags: top_right_flipper
   s_right_lower_pop:
     number: 0804-0
   s_captive_ball:
     number: 0804-1
+  s_pop_standup:
+    number: 0804-6
+  s_spinner:
+    number: 0804-5
+  s_three_bank_a:
+    number: 0804-2
+  s_three_bank_b:
+    number: 0804-3
+  s_three_bank_c:
+    number: 0804-4
 
 coils:
   c_flipper_left_main:
@@ -103,6 +115,8 @@ coils:
   c_right_lower_pop:
     number: 0804-2
     default_pulse_ms: 16
+  c_three_bank:
+    number: 0804-3
 
 playfields:
   playfield:
