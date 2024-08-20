@@ -18,5 +18,5 @@ variable_player:
     score: 25
   s_captive_ball_active:
     score: 1000
-  s_spinner:
+  spinner_basic_spinner_hit:
     score: 3
