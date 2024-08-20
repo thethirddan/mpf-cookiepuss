@@ -87,6 +87,10 @@ switches:
   s_three_bank_c:
     number: 0804-4
 
+spinners:
+  basic_spinner:
+    switch: s_spinner
+
 coils:
   c_flipper_left_main:
     number: 3208-3
