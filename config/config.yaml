@@ -75,6 +75,7 @@ switches:
     number: 0804-0
   s_captive_ball:
     number: 0804-1
+    ignore_window_ms: 500
   s_pop_standup:
     number: 0804-6
   s_spinner:
