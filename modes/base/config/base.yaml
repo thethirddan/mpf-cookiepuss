@@ -20,3 +20,11 @@ variable_player:
     score: 1000
   spinner_basic_spinner_hit:
     score: 3
+  drop_target_bank_three_bank_down:
+    score: 666
+  drop_target_bottom_down:
+    score: 2
+  drop_target_middle_down:
+    score: 3
+  drop_target_top_down:
+    score: 4
