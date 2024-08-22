@@ -88,6 +88,20 @@ switches:
   s_three_bank_top:
     number: 0804-4
 
+drop_targets:
+  bottom:
+    switch: s_three_bank_bottom
+  middle:
+    switch: s_three_bank_middle
+  top:
+    switch: s_three_bank_top
+
+drop_target_banks:
+  three_bank:
+    drop_targets: bottom, middle, top
+    reset_coils: c_three_bank
+    reset_on_complete: 1s
+
 spinners:
   basic_spinner:
     switch: s_spinner
@@ -128,6 +142,7 @@ playfields:
   playfield:
     tags: default
     default_source_device: bd_plunger
+    enable_ball_search: true
 
 flippers:
   left_flipper:
