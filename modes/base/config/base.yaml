@@ -18,6 +18,8 @@ variable_player:
     score: 25
   s_captive_ball_active:
     score: 1000
+  s_pop_standup_active: 
+    score: 50
   spinner_basic_spinner_hit:
     score: 3
   drop_target_bank_three_bank_down:
