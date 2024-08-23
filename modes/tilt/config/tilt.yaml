@@ -1,3 +1,5 @@
+#config_version=6
+
 tilt:
   multiple_hit_window: 300ms
   settle_time: 5s
