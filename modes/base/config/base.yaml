@@ -20,7 +20,7 @@ variable_player:
     score: 1000
   s_pop_standup_active: 
     score: 50
-  spinner_basic_spinner_hit:
+  s_spinner_active:
     score: 3
   drop_target_bank_three_bank_down:
     score: 666

@@ -137,7 +137,7 @@ coils:
     default_pulse_ms: 16
   c_three_bank:
     number: 0804-3
-    default_pulse_ms: 22
+    default_pulse_ms: 20
 
 playfields:
   playfield:
