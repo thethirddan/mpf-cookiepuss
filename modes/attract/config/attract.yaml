@@ -1,0 +1,5 @@
+#config_version=6
+##! mode: attract_mode
+
+slide_player:
+  mode_attract_started: attract
