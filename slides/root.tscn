@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://do3l6mpnkcpys"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_4h61c"]
+
+[node name="Root" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_4h61c")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -30.0
+offset_top = -19.0
+offset_right = 1180.0
+offset_bottom = 683.0
+color = Color(1, 0, 0, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_right = 1233.0
+offset_bottom = 466.0
+theme_override_font_sizes/font_size = 100
+text = "DEFAULT"
+horizontal_alignment = 1
+vertical_alignment = 1
