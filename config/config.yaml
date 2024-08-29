@@ -134,10 +134,10 @@ coils:
     allow_enable: true
   c_right_lower_pop:
     number: 0804-2
-    default_pulse_ms: 16
+    default_pulse_ms: 20
   c_three_bank:
     number: 0804-3
-    default_pulse_ms: 20
+    default_pulse_ms: 23
 
 playfields:
   playfield:
