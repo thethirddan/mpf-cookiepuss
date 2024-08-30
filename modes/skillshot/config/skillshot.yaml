@@ -1,0 +1,31 @@
+#config_version=6
+#skillshot
+
+mode:
+  start_events: ball_started
+  stop_events:
+    - skill_success
+    - skill_failed
+  priority: 500
+
+timers:
+  skillshot_timeout:
+    start_value: 5
+    end_value: 0 # set the timeout of your skill shot here
+    direction: down
+    tick_interval: 1s
+    start_running: false
+    control_events:
+      - action: start
+        event: balldevice_bd_plunger_eject_success # replace "plunger_lane" with the name of your plunger device
+
+variable_player:
+  timer_skill_shot_tick:
+    int: device.timers.skill_shot_timeout.ticks
+    action: set
+  skill_success:
+    score: 444
+
+shots:
+  skill_captive:
+    switch: s_captive_ball

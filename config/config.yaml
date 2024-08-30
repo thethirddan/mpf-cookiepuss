@@ -173,6 +173,16 @@ ball_devices:
     mechanical_eject: true
     eject_timeouts: 3s
 
+ball_saves:
+  default:
+    active_time: 10s
+    hurry_up_time: 2s
+    grace_period: 2s
+    enable_events: mode_base_started
+    timer_start_events: balldevice_bd_plunger_ejecting_ball
+    auto_launch: true
+    balls_to_save: -1
+
 autofire_coils:
   left_slingshot:
     coil: c_left_slingshot
@@ -235,3 +245,4 @@ modes:
   - base
   - tilt
   - attract
+  - skillshot
