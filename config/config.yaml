@@ -157,7 +157,7 @@ coils:
     default_pulse_ms: 20
   c_scoop_eject:
     number: 0804b-2
-    default_pulse_ms: 20
+    default_pulse_ms: 25
 
 playfields:
   playfield:
