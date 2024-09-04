@@ -2,7 +2,7 @@
 #skillshot
 
 mode:
-  start_events: ball_started
+  start_events: balldevices_bd_plunger_eject_success
   stop_events:
     - skill_success
     - skill_failed
@@ -17,7 +17,7 @@ timers:
     start_running: false
     control_events:
       - action: start
-        event: balldevice_bd_plunger_eject_success
+        event: balldevices_bd_plunger_eject_success
 
 variable_player:
   timer_skill_shot_tick:
