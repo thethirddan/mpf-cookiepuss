@@ -2,7 +2,7 @@
 #skillshot
 
 mode:
-  start_events: ball_started
+  start_events: balldevice_bd_plunger_eject_success
   stop_events:
     - skill_success
     - skill_failed
@@ -45,7 +45,7 @@ state_machines:
     transitions:
       - source: start
         target: success
-        events: shots_skill_captive_hit
+        events: s_captive_ball_active
       - source: start
         target: failed
         events: timer_skillshot_timeout_complete
