@@ -21,6 +21,9 @@ fast:
       "0804":
         model: FP-I/O-0804
         order: 3
+      "0804b":
+        model: FP-I/O-0804
+        order: 4
 
 switches:
   s_left_flipper:
@@ -87,6 +90,14 @@ switches:
     number: 0804-3
   s_three_bank_top:
     number: 0804-4
+  s_left_upper_pop:
+    number: 0804b-0
+  s_center_upper_pop:
+    number: 0804b-1
+  s_upper_pop_standup:
+    number: 0804b-3
+  s_scoop:
+    number: 0804b-2
 
 drop_targets:
   bottom:
@@ -138,6 +149,15 @@ coils:
   c_three_bank:
     number: 0804-3
     default_pulse_ms: 23
+  c_center_upper_pop:
+    number: 0804b-1
+    default_pulse_ms: 20
+  c_left_upper_pop:
+    number: 0804b-0
+    default_pulse_ms: 20
+  c_scoop_eject:
+    number: 0804b-2
+    default_pulse_ms: 25
 
 playfields:
   playfield:
@@ -172,6 +192,10 @@ ball_devices:
     ball_switches: s_plunger
     mechanical_eject: true
     eject_timeouts: 3s
+  bd_scoop:
+    ball_switches: s_scoop
+    eject_coil: c_scoop_eject
+    eject_timeouts: 1s
 
 ball_saves:
   default:
@@ -193,6 +217,12 @@ autofire_coils:
   right_lower_pop:
     coil: c_right_lower_pop
     switch: s_right_lower_pop
+  left_upper_pop:
+    coil: c_left_upper_pop
+    switch: s_left_upper_pop
+  center_upper_pop:
+    coil: c_center_upper_pop
+    switch: s_center_upper_pop
 
 virtual_platform_start_active_switches:
   - s_trough1

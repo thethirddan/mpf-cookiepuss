@@ -1,10 +1,33 @@
 events:
   game_ended: 11
-  game_started: 34
+  game_started: 35
 missing_switches:
-  s_left_outlane: 2
-  s_right_outlane: 1
-  s_start: 1
+  s_captive_ball: 1
+  s_left_flipper: 1
+  s_left_inlane: 1
+  s_left_outlane: 3
+  s_left_slingshot: 1
+  s_plunger: 1
+  s_pop_standup: 1
+  s_right_flipper: 1
+  s_right_inlane: 1
+  s_right_lower_pop: 1
+  s_right_outlane: 2
+  s_right_slingshot: 1
+  s_spinner: 1
+  s_start: 2
+  s_three_bank_bottom: 1
+  s_three_bank_middle: 1
+  s_three_bank_top: 1
+  s_tilt_bob: 1
+  s_top_right_flipper: 1
+  s_trough1: 1
+  s_trough2: 1
+  s_trough3: 1
+  s_trough4: 1
+  s_trough5: 1
+  s_trough6: 1
+  s_trough_jam: 1
 player:
   score:
     average: 7891
@@ -27,12 +50,18 @@ switches:
   s_left_outlane: 22
   s_left_slingshot: 73
   s_plunger: 171
+  s_pop_standup: 0
   s_right_flipper: 590
   s_right_inlane: 38
   s_right_lower_pop: 75
   s_right_outlane: 19
   s_right_slingshot: 103
+  s_spinner: 0
   s_start: 6
+  s_three_bank_bottom: 0
+  s_three_bank_middle: 0
+  s_three_bank_top: 0
+  s_tilt_bob: 0
   s_top_right_flipper: 470
   s_trough1: 85
   s_trough2: 114

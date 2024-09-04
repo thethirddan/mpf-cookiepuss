@@ -17,11 +17,17 @@ variable_player:
     score: 50
   s_right_slingshot_active:
     score: 50
+  s_left_upper_pop_active:
+    score: 25
+  s_center_upper_pop_active:
+    score: 25
   s_right_lower_pop_active:
     score: 25
   s_captive_ball_active:
     score: 1000
   s_pop_standup_active: 
+    score: 50
+  s_upper_pop_standup_active: 
     score: 50
   s_spinner_active:
     score: 3
@@ -33,3 +39,5 @@ variable_player:
     score: 3
   drop_target_top_down:
     score: 4
+  s_scoop_active:
+    score: 500
