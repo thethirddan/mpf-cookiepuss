@@ -10,22 +10,42 @@ mode:
 
 timers:
   skillshot_timeout:
-    start_value: 5
-    end_value: 0 # set the timeout of your skill shot here
+    start_value: 10
+    end_value: 0
     direction: down
     tick_interval: 1s
     start_running: false
     control_events:
       - action: start
-        event: balldevice_bd_plunger_eject_success # replace "plunger_lane" with the name of your plunger device
+        event: balldevice_bd_plunger_eject_success
 
 variable_player:
   timer_skill_shot_tick:
     int: device.timers.skill_shot_timeout.ticks
     action: set
   skill_success:
-    score: 444
+    score: 4444
 
 shots:
   skill_captive:
     switch: s_captive_ball
+
+state_machines:
+  skillshot_success:
+    debug: true
+    states:
+      start:
+        label: Skill shot ready
+      success:
+        label: Skill successful
+        events_when_started: skill_success
+      failed:
+        label: Skill failed
+        events_when_started: skill_failed
+    transitions:
+      - source: start
+        target: success
+        events: shots_skill_captive_hit
+      - source: start
+        target: failed
+        events: timer_skillshot_timeout_complete
