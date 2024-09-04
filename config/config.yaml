@@ -59,6 +59,8 @@ switches:
     type: NC
   s_plunger:
     number: 3208-7
+    events_when_activated: ball_in
+    events_when_deactivated: ball_out
   s_right_inlane:
     number: 3208-10
     tags: playfield_active
@@ -199,11 +201,11 @@ ball_devices:
 
 ball_saves:
   default:
-    active_time: 10s
+    active_time: 5s
     hurry_up_time: 2s
     grace_period: 2s
     enable_events: mode_base_started
-    timer_start_events: balldevice_bd_plunger_ball_eject_attempt
+    timer_start_events: ball_out
     auto_launch: true
     balls_to_save: -1
 

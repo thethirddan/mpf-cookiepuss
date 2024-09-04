@@ -2,7 +2,7 @@
 #skillshot
 
 mode:
-  start_events: balldevice_bd_plunger_ball_eject_attempt
+  start_events: ball_out
   stop_events:
     - skill_success
     - skill_failed
