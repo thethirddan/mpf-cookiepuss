@@ -9,7 +9,7 @@ slide_player:
   mode_base_started: base
 
 sound_player:
-  mode_frenzy_started:
+  mode_base_started:
     Multilateral_music:
       bus: music
       fade_in: 500ms
