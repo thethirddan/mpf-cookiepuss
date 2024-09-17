@@ -24,7 +24,64 @@ fast:
       "0804b":
         model: FP-I/O-0804
         order: 4
+  aud:
+    port: auto
+    debug: false
 
+    main_amp_enabled: true
+    sub_amp_enabled: false
+    headphones_amp_enabled: false
+
+    main_steps: 20
+    sub_steps: 20
+    headphones_steps: 20
+
+    default_main_volume: 10
+    default_sub_volume: 10
+    default_headphones_volume: 10
+
+    persist_volume_settings: true
+
+    max_hw_volume_main: 63
+    max_hw_volume_sub: 63
+    max_hw_volume_headphones: 63
+
+    main_levels_list: None
+    sub_levels_list: None
+    headphones_levels_list: None
+
+    link_sub_to_main: true
+    link_headphones_to_main: true
+
+    headphones_level: headphones
+    mute_speakers_with_headphones: true
+
+variable_player:
+  increase_main_volume:
+    fast_audio_main_volume:
+      action: add_machine
+      int: 1
+  decrease_main_volume:
+    fast_audio_main_volume:
+      action: add_machine
+      int: -1
+  increase_sub_volume:
+    fast_audio_sub_volume:
+      action: add_machine
+      int: 1
+  decrease_sub_volume:
+    fast_audio_sub_volume:
+      action: add_machine
+      int: -1
+  increase_headphones_volume:
+    fast_audio_headphones_volume:
+      action: add_machine
+      int: 1
+  decrease_headphones_volume:
+    fast_audio_headphones_volume:
+      action: add_machine
+      int: -1
+      
 switches:
   s_left_flipper:
     number: cab-8
