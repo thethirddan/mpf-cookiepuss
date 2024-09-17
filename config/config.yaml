@@ -81,6 +81,13 @@ variable_player:
     fast_audio_headphones_volume:
       action: add_machine
       int: -1
+
+sound_player:
+  mode_base_started:
+    Multilateral_music:
+      bus: music
+      fade_in: 500ms
+      fade_out: 1s
       
 switches:
   s_left_flipper:
