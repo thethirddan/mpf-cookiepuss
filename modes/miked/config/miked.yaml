@@ -16,9 +16,6 @@ variable_player:
     score: 500|block
   s_right_lower_pop_active:
     score: 500|block
-  timer_miked_timer_tick:
-    int: device.timers.miked_timer_timeout.ticks
-    action: set
 
 timers:
   timer_name:
