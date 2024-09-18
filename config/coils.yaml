@@ -1,0 +1,60 @@
+#config_version=6
+
+coils:
+  c_flipper_left_main:
+    number: 3208-3
+    default_pulse_ms: 16
+  c_flipper_left_hold:
+    number: 3208-2
+    allow_enable: true
+  c_flipper_right_main:
+    number: 3208-5
+    default_pulse_ms: 16
+  c_flipper_right_hold:
+    number: 3208-4
+    allow_enable: true
+  c_trough_eject:
+    number: 3208-1
+    default_pulse_ms: 20
+  c_left_slingshot:
+    number: 3208-7
+  c_right_slingshot:
+    number: 3208-6
+  c_flipper_top_right_main:
+    number: 0804-0
+    default_pulse_ms: 16
+  c_flipper_top_right_hold:
+    number: 0804-1
+    allow_enable: true
+  c_right_lower_pop:
+    number: 0804-2
+    default_pulse_ms: 20
+  c_three_bank:
+    number: 0804-3
+    default_pulse_ms: 23
+  c_center_upper_pop:
+    number: 0804b-1
+    default_pulse_ms: 20
+  c_left_upper_pop:
+    number: 0804b-0
+    default_pulse_ms: 20
+  c_scoop_eject:
+    number: 0804b-2
+    default_pulse_ms: 25
+
+autofire_coils:
+  left_slingshot:
+    coil: c_left_slingshot
+    switch: s_left_slingshot
+  right_slingshot:
+    coil: c_right_slingshot
+    switch: s_right_slingshot
+  right_lower_pop:
+    coil: c_right_lower_pop
+    switch: s_right_lower_pop
+  left_upper_pop:
+    coil: c_left_upper_pop
+    switch: s_left_upper_pop
+  center_upper_pop:
+    coil: c_center_upper_pop
+    switch: s_center_upper_pop

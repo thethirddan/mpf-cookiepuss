@@ -1,0 +1,34 @@
+#config_version=6
+
+sound_player:
+  mode_base_started:
+    Multilateral_music:
+      bus: music
+      fade_in: 500ms
+      fade_out: 1s
+
+variable_player:
+  increase_main_volume:
+    fast_audio_main_volume:
+      action: add_machine
+      int: 1
+  decrease_main_volume:
+    fast_audio_main_volume:
+      action: add_machine
+      int: -1
+  increase_sub_volume:
+    fast_audio_sub_volume:
+      action: add_machine
+      int: 1
+  decrease_sub_volume:
+    fast_audio_sub_volume:
+      action: add_machine
+      int: -1
+  increase_headphones_volume:
+    fast_audio_headphones_volume:
+      action: add_machine
+      int: 1
+  decrease_headphones_volume:
+    fast_audio_headphones_volume:
+      action: add_machine
+      int: -1

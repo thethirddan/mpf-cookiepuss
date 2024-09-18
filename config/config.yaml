@@ -24,7 +24,7 @@ fast:
       "0804b":
         model: FP-I/O-0804
         order: 4
-        
+
 #  aud:
 #    port: auto
 #    debug: false
@@ -57,174 +57,12 @@ fast:
 #    headphones_level: headphones
 #    mute_speakers_with_headphones: true
 
-variable_player:
-  increase_main_volume:
-    fast_audio_main_volume:
-      action: add_machine
-      int: 1
-  decrease_main_volume:
-    fast_audio_main_volume:
-      action: add_machine
-      int: -1
-  increase_sub_volume:
-    fast_audio_sub_volume:
-      action: add_machine
-      int: 1
-  decrease_sub_volume:
-    fast_audio_sub_volume:
-      action: add_machine
-      int: -1
-  increase_headphones_volume:
-    fast_audio_headphones_volume:
-      action: add_machine
-      int: 1
-  decrease_headphones_volume:
-    fast_audio_headphones_volume:
-      action: add_machine
-      int: -1
-
-sound_player:
-  mode_base_started:
-    Multilateral_music:
-      bus: music
-      fade_in: 500ms
-      fade_out: 1s
-
-switches:
-  s_left_flipper:
-    number: cab-8
-    tags: left_flipper
-  s_right_flipper:
-    number: cab-9
-    tags: right_flipper
-  s_top_right_flipper:
-    number: cab-10
-    tags: top_right_flipper
-  s_start:
-    number: cab-11
-    tags: start
-  s_tilt_bob:
-    number: cab-12
-    tags: tilt_warning
-  s_trough1:
-    number: 3208-0
-    type: NC
-  s_trough2:
-    number: 3208-1
-  s_trough3:
-    number: 3208-2
-  s_trough4:
-    number: 3208-3
-  s_trough5:
-    number: 3208-4
-  s_trough6:
-    number: 3208-5
-  s_trough_jam:
-    number: 3208-6
-    type: NC
-  s_plunger:
-    number: 3208-7
-    events_when_activated: ball_in
-    events_when_deactivated: ball_out
-  s_right_inlane:
-    number: 3208-10
-    tags: playfield_active
-  s_left_inlane:
-    number: 3208-14
-    tags: playfield_active
-  s_right_outlane:
-    number: 3208-11
-    tags: playfield_active
-  s_left_outlane:
-    number: 3208-13
-    tags: playfield_active
-  s_left_slingshot:
-    number: 3208-15
-  s_right_slingshot:
-    number: 3208-9
-  s_right_lower_pop:
-    number: 0804-0
-  s_captive_ball:
-    number: 0804-1
-    ignore_window_ms: 500
-  s_pop_standup:
-    number: 0804-6
-  s_spinner:
-    number: 0804-5
-  s_three_bank_bottom:
-    number: 0804-2
-  s_three_bank_middle:
-    number: 0804-3
-  s_three_bank_top:
-    number: 0804-4
-  s_left_upper_pop:
-    number: 0804b-0
-  s_center_upper_pop:
-    number: 0804b-1
-  s_upper_pop_standup:
-    number: 0804b-3
-  s_scoop:
-    number: 0804b-2
-
-drop_targets:
-  bottom:
-    switch: s_three_bank_bottom
-  middle:
-    switch: s_three_bank_middle
-  top:
-    switch: s_three_bank_top
-
-drop_target_banks:
-  three_bank:
-    drop_targets: bottom, middle, top
-    reset_coils: c_three_bank
-    reset_on_complete: 1s
-
-spinners:
-  basic_spinner:
-    switch: s_spinner
-
-coils:
-  c_flipper_left_main:
-    number: 3208-3
-    default_pulse_ms: 16
-  c_flipper_left_hold:
-    number: 3208-2
-    allow_enable: true
-  c_flipper_right_main:
-    number: 3208-5
-    default_pulse_ms: 16
-  c_flipper_right_hold:
-    number: 3208-4
-    allow_enable: true
-  c_trough_eject:
-    number: 3208-1
-    default_pulse_ms: 20
-  c_left_slingshot:
-    number: 3208-7
-  c_right_slingshot:
-    number: 3208-6
-  c_flipper_top_right_main:
-    number: 0804-0
-    default_pulse_ms: 16
-  c_flipper_top_right_hold:
-    number: 0804-1
-    allow_enable: true
-  c_right_lower_pop:
-    number: 0804-2
-    default_pulse_ms: 20
-  c_three_bank:
-    number: 0804-3
-    default_pulse_ms: 23
-  c_center_upper_pop:
-    number: 0804b-1
-    default_pulse_ms: 20
-  c_left_upper_pop:
-    number: 0804b-0
-    default_pulse_ms: 20
-  c_scoop_eject:
-    number: 0804b-2
-    default_pulse_ms: 25
+config:
+  - lights.yaml
+  - coils.yaml
+  - switches.yaml
+  - sounds.yaml
+  - variables.yaml
 
 playfields:
   playfield:
@@ -273,31 +111,6 @@ ball_saves:
     timer_start_events: ball_out
     auto_launch: true
     balls_to_save: -1
-
-autofire_coils:
-  left_slingshot:
-    coil: c_left_slingshot
-    switch: s_left_slingshot
-  right_slingshot:
-    coil: c_right_slingshot
-    switch: s_right_slingshot
-  right_lower_pop:
-    coil: c_right_lower_pop
-    switch: s_right_lower_pop
-  left_upper_pop:
-    coil: c_left_upper_pop
-    switch: s_left_upper_pop
-  center_upper_pop:
-    coil: c_center_upper_pop
-    switch: s_center_upper_pop
-
-virtual_platform_start_active_switches:
-  - s_trough1
-  - s_trough2
-  - s_trough3
-  - s_trough4
-  - s_trough5
-  - s_trough6
 
 keyboard:
   s:
