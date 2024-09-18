@@ -36,9 +36,9 @@ fast:
     sub_steps: 20
     headphones_steps: 20
 
-    default_main_volume: 10
-    default_sub_volume: 10
-    default_headphones_volume: 10
+    default_main_volume: 50
+    default_sub_volume: 50
+    default_headphones_volume: 50
 
     persist_volume_settings: true
 
@@ -88,7 +88,7 @@ sound_player:
       bus: music
       fade_in: 500ms
       fade_out: 1s
-      
+
 switches:
   s_left_flipper:
     number: cab-8

@@ -8,12 +8,6 @@ mode:
 slide_player:
   mode_base_started: base
 
-sound_player:
-  mode_base_started:
-    Multilateral_music:
-      bus: music
-      fade_in: 500ms
-      fade_out: 1s
 
 variable_player:
   s_right_inlane_active:
