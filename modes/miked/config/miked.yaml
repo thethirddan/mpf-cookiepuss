@@ -16,18 +16,21 @@ variable_player:
     score: 500|block
   s_right_lower_pop_active:
     score: 500|block
+  timer_miked_timer_tick:
+    miked_timer:
+      int: device.timers.miked_timer_timeout.ticks
+      action: set
 
 timers:
-  timer_name:
-    miked_timer:
-      start_value: 30
-      end_value: 0
-      direction: down
-      control_events:
-        - action: start
-          event: mode_miked_started
-        - action: add
-          event: s_left_upper_pop_active, s_center_upper_pop_active, s_right_lower_pop_active
-          value: 1
-        - action: stop
-          event: miked_stop
+  miked_timer:
+    start_value: 30
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: mode_miked_started
+      - action: add
+        event: s_left_upper_pop_active, s_center_upper_pop_active, s_right_lower_pop_active
+        value: 1
+      - action: stop
+        event: miked_stop

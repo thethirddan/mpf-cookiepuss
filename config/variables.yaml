@@ -9,5 +9,5 @@
 #   value_type: int
 
 player_vars:
-  timer_miked_timer_tick:
+  miked_timer:
     initial_value: 0
