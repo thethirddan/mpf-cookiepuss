@@ -21,6 +21,7 @@ variable_player:
       int: device.timers.miked_timer_timeout.ticks
       action: set
 
+# TODO: add a pop group that has one event
 timers:
   miked_timer:
     start_value: 30
@@ -30,7 +31,13 @@ timers:
       - action: start
         event: mode_miked_started
       - action: add
-        event: s_left_upper_pop_active, s_center_upper_pop_active, s_right_lower_pop_active
+        event: s_left_upper_pop_active
+        value: 1
+      - action: add
+        event: s_center_upper_pop_active
+        value: 1
+      - action: add
+        event: s_right_lower_pop_active
         value: 1
       - action: stop
         event: miked_stop
