@@ -6,7 +6,7 @@ slide_player:
 
 mode:
   start_events: miked_start
-  stop_events: miked_stop
+  stop_events: timer_miked_timer_complete
   priority: 300
 
 variable_player:
@@ -39,5 +39,3 @@ timers:
       - action: add
         event: s_right_lower_pop_active
         value: 1
-      - action: stop
-        event: miked_stop
