@@ -7,3 +7,7 @@
 #   initial_value: 0
 #   persist: false
 #   value_type: int
+
+player_vars:
+  timer_miked_timer_tick:
+    initial_value: 0

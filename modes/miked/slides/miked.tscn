@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://bijhl8yd8vpy8"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_l3y7r"]
+[ext_resource type="Texture2D" uid="uid://dsklwqoq17nrx" path="res://assets/mike-d-6dc2b7d1-7d64-41b5-8897-65bce69f03e8.webp" id="2_nryfr"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_us12w"]
+[ext_resource type="AudioStream" uid="uid://b2ucldbvjrdqn" path="res://sounds/makeSomeNoise_music.ogg" id="4_iqhpd"]
+
+[node name="Base" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_l3y7r")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(579.933, 326.5)
+scale = Vector2(0.585565, 0.585566)
+texture = ExtResource("2_nryfr")
+
+[node name="score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 1151.0
+offset_bottom = 515.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 100
+text = "1,000,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_us12w")
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+
+[node name="timer" type="Label" parent="."]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 311.0
+offset_right = 1493.0
+offset_bottom = 825.0
+theme_override_colors/font_color = Color(0.866667, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0.00566115, 0.00566115, 0.00566115, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 222
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_us12w")
+variable_name = "timer_miked_timer_tick"
+comma_separate = true
+min_digits = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_iqhpd")
+autoplay = true
+bus = &"music"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 563.0
+offset_right = 1451.0
+offset_bottom = 836.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 18
+theme_override_font_sizes/font_size = 100
+text = "Hit Those Pops"
