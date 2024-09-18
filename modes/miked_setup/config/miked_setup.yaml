@@ -13,5 +13,5 @@ counters:
     count_interval: 1
     direction: up
     persist_state: true
-    events_when_complete: miked
+    events_when_complete: miked_start
     debug: true
