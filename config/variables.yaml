@@ -11,3 +11,5 @@
 player_vars:
   miked_timer:
     initial_value: 0
+  miked_count_var:
+    intital_value: 0

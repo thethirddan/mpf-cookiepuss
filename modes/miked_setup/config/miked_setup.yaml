@@ -6,7 +6,7 @@ mode:
   priority: 200
 
 counters:
-  miked_count:
+  miked_counter:
     count_events: s_spinner_hit
     starting_count: 0
     count_complete_value: 10
@@ -14,4 +14,11 @@ counters:
     direction: up
     persist_state: true
     events_when_complete: miked_start
+    reset_on_complete: true
     debug: true
+
+variable_player:
+  logicblock_miked_counter_updated:
+    miked_count_var:
+      int: value
+      action: set
