@@ -25,37 +25,37 @@ fast:
         model: FP-I/O-0804
         order: 4
 
-#  aud:
-#    port: auto
-#    debug: false
+  aud:
+    port: auto
+    debug: false
 
-#    main_amp_enabled: true
-#    sub_amp_enabled: true
-#    headphones_amp_enabled: true
+    main_amp_enabled: true
+    sub_amp_enabled: true
+    headphones_amp_enabled: true
 
-#    main_steps: 20
-#    sub_steps: 20
-#    headphones_steps: 20
+    main_steps: 20
+    sub_steps: 20
+    headphones_steps: 20
 
-#    default_main_volume: 50
-#    default_sub_volume: 50
-#    default_headphones_volume: 50
+    default_main_volume: 50
+    default_sub_volume: 50
+    default_headphones_volume: 50
 
-#    persist_volume_settings: true
+    persist_volume_settings: true
 
-#    max_hw_volume_main: 63
-#    max_hw_volume_sub: 63
-#    max_hw_volume_headphones: 63
+    max_hw_volume_main: 63
+    max_hw_volume_sub: 63
+    max_hw_volume_headphones: 63
 
-#    main_levels_list: None
-#    sub_levels_list: None
-#    headphones_levels_list: None
+    main_levels_list: None
+    sub_levels_list: None
+    headphones_levels_list: None
 
-#    link_sub_to_main: true
-#    link_headphones_to_main: true
+    link_sub_to_main: true
+    link_headphones_to_main: true
 
-#    headphones_level: headphones
-#    mute_speakers_with_headphones: true
+    headphones_level: headphones
+    mute_speakers_with_headphones: true
 
 config:
   - lights.yaml
@@ -139,3 +139,4 @@ modes:
   - tilt
   - attract
   - skillshot
+  - miked
