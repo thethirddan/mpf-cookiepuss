@@ -18,7 +18,7 @@ variable_player:
     score: 500|block
   timer_miked_timer_tick:
     miked_timer:
-      int: device.timers.miked_timer_timeout.ticks
+      int: device.timers.miked_timer.ticks
       action: set
 
 # TODO: add a pop group that has one event
