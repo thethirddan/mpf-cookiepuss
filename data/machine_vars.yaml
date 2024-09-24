@@ -1,3 +1,11 @@
+fast_audio_headphones_volume:
+  expire: null
+  expire_secs: null
+  value: 10
+fast_audio_main_volume:
+  expire: null
+  expire_secs: null
+  value: 44
 master_volume:
   expire: null
   expire_secs: null
