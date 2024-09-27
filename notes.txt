@@ -1,0 +1,23 @@
+RE Randomizing songs: 
+Anthony van Winkle
+AudiostreamRandomizer counts as a sound asset so it can be played from sound player just like any other sound
+
+Dan Baumfeld
+so would I create a slide that only contains AudiostreamRandomizer in godot, and start and stop it as needed? 
+or are you talking about another way to do this?
+
+Anthony van Winkle
+Create a new Resource of type AudioStreamRandomizer and save it as a file in your sound folder, 
+then use that file name to play it from sound player 
+
+-------------------
+RE sound on slides:
+Anthony van Winkle
+Yes, the best way to manage music is with sound_player. Slide priority does stack them correctly, 
+but the lower-priority slides still exist in the scene tree so any behavior they have (like playing music) will still be in effect.
+(Though it would probably be worth adding some callback methods on the slide class for when it changes state, 
+e.g. becomes active or inactive. Not for this case, but maybe some other cases)
+
+Ernie
+I do the music in the mode configs
+You can also have a game_wide mode to handle music, that starts and stops with ball, and then has start and stops for all the audio
