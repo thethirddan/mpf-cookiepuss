@@ -75,6 +75,12 @@ switches:
     number: 0804b-3
   s_scoop:
     number: 0804b-2
+  s_tshirt_top_standup:
+    number: 3208-23
+  s_tshirt_bottom_standup:
+    number: 3208-22
+  s_three_bank_standup:
+    number: 3208-21
 
 drop_targets:
   bottom:
@@ -88,7 +94,7 @@ drop_target_banks:
   three_bank:
     drop_targets: bottom, middle, top
     reset_coils: c_three_bank
-    reset_on_complete: 1s
+    reset_on_complete: 20s
 
 spinners:
   basic_spinner:

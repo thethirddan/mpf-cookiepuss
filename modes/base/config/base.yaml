@@ -8,7 +8,6 @@ mode:
 slide_player:
   mode_base_started: base
 
-
 variable_player:
   s_right_inlane_active:
     score: 100
@@ -26,9 +25,9 @@ variable_player:
     score: 25
   s_captive_ball_active:
     score: 1000
-  s_pop_standup_active: 
+  s_pop_standup_active:
     score: 50
-  s_upper_pop_standup_active: 
+  s_upper_pop_standup_active:
     score: 50
   s_spinner_active:
     score: 3
@@ -42,4 +41,9 @@ variable_player:
     score: 4
   s_scoop_active:
     score: 500
-
+  s_tshirt_top_standup_active:
+    score: 50
+  s_tshirt_bottom_standup_active:
+    score: 50
+  s_three_bank_standup_active:
+    score: 1000
