@@ -2,20 +2,21 @@
 ##! mode: miked_setup_mode
 
 mode:
-  start_events: ball_started
+  start_events: ball_started, mode_miked_stopped
+  stop_events: miked_start
   priority: 200
 
 counters:
   miked_counter:
     count_events: s_spinner_active
     starting_count: 0
-    count_complete_value: 10
+    count_complete_value: 30
     count_interval: 1
     direction: up
     persist_state: true
     events_when_complete: miked_start
-    reset_on_complete: true
     debug: true
+    restart_events: ball_started, mode_miked_stopped
 
 variable_player:
   logicblock_miked_counter_updated:

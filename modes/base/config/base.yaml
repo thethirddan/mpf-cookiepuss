@@ -9,6 +9,10 @@ slide_player:
   mode_base_started: base
 
 variable_player:
+  miked_start:
+    miked_modes_started: 1
+  adrock_start:
+    adrock_modes_started: 1
   s_right_inlane_active:
     score: 100
   s_left_inlane_active:
