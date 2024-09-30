@@ -41,6 +41,9 @@ coils:
   c_scoop_eject:
     number: 0804b-2
     default_pulse_ms: 25
+  c_plunger:
+    number: 3208-0
+    default_pulse_ms: 20
 
 autofire_coils:
   left_slingshot:
