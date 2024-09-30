@@ -45,7 +45,6 @@ sound_player:
     makeSomeNoise:
       action: play
       loops: -1
-      block: true
   mode_miked_stopped:
     makeSomeNoise:
       action: stop

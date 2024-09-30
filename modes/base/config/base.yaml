@@ -56,3 +56,10 @@ sound_player:
   mode_base_stopped:
     Randomizer:
       action: stop
+  mode_miked_started:
+    Randomizer:
+      action: stop
+  mode_miked_stopped:
+    Randomizer:
+      action: play
+      loops: -1
