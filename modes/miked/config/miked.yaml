@@ -39,3 +39,13 @@ timers:
       - action: add
         event: s_right_lower_pop_active
         value: 1
+
+sound_player:
+  mode_miked_started:
+    makeSomeNoise:
+      action: play
+      loops: -1
+      block: true
+  mode_miked_stopped:
+    makeSomeNoise:
+      action: stop
