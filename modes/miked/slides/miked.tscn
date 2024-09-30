@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bijhl8yd8vpy8"]
+[gd_scene load_steps=4 format=3 uid="uid://bijhl8yd8vpy8"]
 
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_l3y7r"]
 [ext_resource type="Texture2D" uid="uid://dsklwqoq17nrx" path="res://assets/mike-d-6dc2b7d1-7d64-41b5-8897-65bce69f03e8.webp" id="2_nryfr"]
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_us12w"]
-[ext_resource type="AudioStream" uid="uid://b2ucldbvjrdqn" path="res://sounds/makeSomeNoise_music.ogg" id="4_iqhpd"]
 
 [node name="Base" type="Control"]
 layout_mode = 3
@@ -50,11 +49,6 @@ script = ExtResource("3_us12w")
 variable_name = "miked_timer"
 comma_separate = true
 min_digits = 2
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_iqhpd")
-autoplay = true
-bus = &"music"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
