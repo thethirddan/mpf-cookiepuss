@@ -15,3 +15,12 @@ player_vars:
   miked_count_var:
     initial_value: 0
     value_type: int
+  adrock_count_var:
+    initial_value: 0
+    value_type: int
+  miked_modes_started:
+    initial_value: 0
+    value_type: int
+  adrock_modes_started:
+    initial_value: 0
+    value_type: int

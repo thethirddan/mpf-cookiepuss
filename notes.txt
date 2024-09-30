@@ -21,3 +21,6 @@ e.g. becomes active or inactive. Not for this case, but maybe some other cases)
 Ernie
 I do the music in the mode configs
 You can also have a game_wide mode to handle music, that starts and stops with ball, and then has start and stops for all the audio
+
+------------
+- figure out how to restart modes but make them harder to get
