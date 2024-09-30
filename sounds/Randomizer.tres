@@ -1,0 +1,27 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=8 format=3 uid="uid://6fhgok2ffxix"]
+
+[ext_resource type="AudioStream" uid="uid://bm0netcwwfriw" path="res://sounds/DubTheMic_music.ogg" id="1_56id1"]
+[ext_resource type="AudioStream" uid="uid://bmrpsyihjrf6u" path="res://sounds/FuttermansRule_music.ogg" id="2_wrnqw"]
+[ext_resource type="AudioStream" uid="uid://qhp8nq2cha22" path="res://sounds/GrooveHolmes_music.ogg" id="3_m4y8o"]
+[ext_resource type="AudioStream" uid="uid://mjgkb06nexhk" path="res://sounds/In3s_music.ogg" id="4_88vbh"]
+[ext_resource type="AudioStream" uid="uid://17g4i1jxrtwt" path="res://sounds/Multilateral_music.ogg" id="5_4v5vk"]
+[ext_resource type="AudioStream" uid="uid://bhaqurc74jp76" path="res://sounds/Pow_music.ogg" id="6_djttc"]
+[ext_resource type="AudioStream" uid="uid://mye8fkgqeumw" path="res://sounds/SneakinOutTheHospital_music.ogg" id="7_r353d"]
+
+[resource]
+playback_mode = 1
+streams_count = 7
+stream_0/stream = ExtResource("1_56id1")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_wrnqw")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("3_m4y8o")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("4_88vbh")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("5_4v5vk")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("6_djttc")
+stream_5/weight = 1.0
+stream_6/stream = ExtResource("7_r353d")
+stream_6/weight = 1.0
