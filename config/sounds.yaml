@@ -1,12 +1,31 @@
 #config_version=6
-
 sound_player:
   mode_base_started:
-    Multilateral_music:
+    Randomizer:
+      action: play
+      loops: -1
       bus: music
-      fade_in: 500ms
-      fade_out: 1s
-
+      fade_in: 300ms
+  mode_base_stopped:
+    Randomizer:
+      action: stop
+  mode_miked_started:
+    Randomizer:
+      action: stop
+    makeSomeNoise:
+      action: play
+      loops: -1
+      bus: music
+      fade_in: 300ms
+  mode_miked_stopped:
+    makeSomeNoise:
+      action: stop
+    Randomizer:
+      action: play
+      loops: -1
+      bus: music
+      fade_in: 300ms
+    
 variable_player:
   increase_main_volume:
     fast_audio_main_volume:

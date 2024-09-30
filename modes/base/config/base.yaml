@@ -47,19 +47,3 @@ variable_player:
     score: 50
   s_three_bank_standup_active:
     score: 1000
-
-sound_player:
-  mode_base_started:
-    Randomizer:
-      action: play
-      loops: -1
-  mode_base_stopped:
-    Randomizer:
-      action: stop
-  mode_miked_started:
-    Randomizer:
-      action: stop
-  mode_miked_stopped:
-    Randomizer:
-      action: play
-      loops: -1
