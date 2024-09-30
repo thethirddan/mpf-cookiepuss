@@ -12,13 +12,13 @@ sound_player:
   mode_miked_started:
     Randomizer:
       action: stop
-    makeSomeNoise:
+    makeSomeNoise_music:
       action: play
       loops: -1
       bus: music
       fade_in: 300ms
   mode_miked_stopped:
-    makeSomeNoise:
+    makeSomeNoise_music:
       action: stop
     Randomizer:
       action: play
