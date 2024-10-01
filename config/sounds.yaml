@@ -1,9 +1,9 @@
 #config_version=6
 sound_player:
   mode_base_started:
-    Randomizer:
+    #Randomizer:
+    Multilateral_music:
       action: play
-      loops: -1
       bus: music
       fade_in: 300ms
   mode_base_stopped:
@@ -14,7 +14,6 @@ sound_player:
       action: stop
     makeSomeNoise_music:
       action: play
-      loops: -1
       bus: music
       fade_in: 300ms
   mode_miked_stopped:
@@ -22,7 +21,6 @@ sound_player:
       action: stop
     Randomizer:
       action: play
-      loops: -1
       bus: music
       fade_in: 300ms
     
