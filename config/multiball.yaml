@@ -3,5 +3,5 @@
 multiballs:
   adrock:
     ball_count: 3
-    enable_events: mode_adrock_started
+    enable_events: adrock_start
     shoot_again: 10s
