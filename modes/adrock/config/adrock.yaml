@@ -10,7 +10,7 @@ slide_player:
 mode:
   start_events: adrock_start
   stop_events: multiball_adrock_ended
-  priority: 300
+  priority: 305
 
 variable_player:
   s_three_bank_standup_active:
