@@ -63,6 +63,7 @@ config:
   - switches.yaml
   - sounds.yaml
   - variables.yaml
+  - multiball.yaml
 
 playfields:
   playfield:

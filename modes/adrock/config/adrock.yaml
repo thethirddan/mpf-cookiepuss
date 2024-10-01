@@ -12,12 +12,6 @@ mode:
   stop_events: multiball_adrock_ended
   priority: 300
 
-multiballs:
-  adrock:
-    ball_count: 3
-    enable_events: mode_adrock_started
-    shoot_again: 10s
-
 variable_player:
   s_three_bank_standup_active:
     score: 5000|block
