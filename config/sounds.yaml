@@ -3,7 +3,7 @@ sound_player:
   mode_base_started:
     Randomizer:
       action: play
-      loops: 9
+      #loops: -1
       bus: music
       fade_in: 300ms
   mode_base_stopped:
@@ -14,7 +14,7 @@ sound_player:
       action: stop
     makeSomeNoise_music:
       action: play
-      loops: 9
+      #loops: -1
       bus: music
       fade_in: 300ms
   mode_miked_stopped:
@@ -22,7 +22,7 @@ sound_player:
       action: stop
     Randomizer:
       action: play
-      loops: 9
+      #loops: -1
       bus: music
       fade_in: 300ms
     
