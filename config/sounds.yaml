@@ -6,6 +6,7 @@ sound_player:
       #loops: -1
       bus: music
       fade_in: 300ms
+      events_when_stopped: play_random_song
   mode_base_stopped:
     Randomizer:
       action: stop
@@ -25,6 +26,20 @@ sound_player:
       #loops: -1
       bus: music
       fade_in: 300ms
+  play_random_song:
+    Randomizer:
+      action: play
+      #loops: -1
+      bus: music
+      fade_in: 300ms
+      events_when_stopped: play_next_random_song
+  play_next_random_song:
+    Randomizer:
+      action: play
+      #loops: -1
+      bus: music
+      fade_in: 300ms
+      events_when_stopped: play_random_song
     
 variable_player:
   increase_main_volume:
