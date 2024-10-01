@@ -1,14 +1,15 @@
 events:
-  game_ended: 32
-  game_started: 73
+  game_ended: 33
+  game_started: 74
 missing_switches:
-  s_start: 1
-  s_tilt_bob: 7
+  s_start: 2
+  s_tilt_bob: 8
 player:
   score:
-    average: 12211
+    average: 13455
     top:
     - 55679
+    - 54526
     - 46225
     - 25350
     - 24166
@@ -17,41 +18,40 @@ player:
     - 20201
     - 14887
     - 14573
-    - 14264
-    total: 33
+    total: 34
 shots:
   skill_captive: 16
 switches:
-  s_captive_ball: 156
-  s_center_upper_pop: 179
-  s_left_flipper: 1203
-  s_left_inlane: 97
-  s_left_outlane: 51
-  s_left_slingshot: 249
-  s_left_upper_pop: 131
-  s_plunger: 421
-  s_pop_standup: 46
-  s_right_flipper: 1468
-  s_right_inlane: 97
-  s_right_lower_pop: 236
-  s_right_outlane: 50
-  s_right_slingshot: 358
-  s_scoop: 67
-  s_spinner: 1288
+  s_captive_ball: 158
+  s_center_upper_pop: 182
+  s_left_flipper: 1240
+  s_left_inlane: 107
+  s_left_outlane: 53
+  s_left_slingshot: 259
+  s_left_upper_pop: 139
+  s_plunger: 429
+  s_pop_standup: 48
+  s_right_flipper: 1509
+  s_right_inlane: 104
+  s_right_lower_pop: 248
+  s_right_outlane: 51
+  s_right_slingshot: 365
+  s_scoop: 70
+  s_spinner: 1364
   s_start: 7
-  s_three_bank_bottom: 56
-  s_three_bank_middle: 56
-  s_three_bank_standup: 52
-  s_three_bank_top: 52
+  s_three_bank_bottom: 61
+  s_three_bank_middle: 61
+  s_three_bank_standup: 64
+  s_three_bank_top: 56
   s_tilt_bob: 21
-  s_top_right_flipper: 1256
-  s_trough1: 198
-  s_trough2: 244
-  s_trough3: 173
-  s_trough4: 156
-  s_trough5: 156
-  s_trough6: 155
-  s_trough_jam: 203
-  s_tshirt_bottom_standup: 25
-  s_tshirt_top_standup: 31
-  s_upper_pop_standup: 147
+  s_top_right_flipper: 1294
+  s_trough1: 201
+  s_trough2: 247
+  s_trough3: 177
+  s_trough4: 159
+  s_trough5: 159
+  s_trough6: 158
+  s_trough_jam: 206
+  s_tshirt_bottom_standup: 28
+  s_tshirt_top_standup: 33
+  s_upper_pop_standup: 158
