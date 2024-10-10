@@ -64,6 +64,7 @@ config:
   - sounds.yaml
   - variables.yaml
   - multiball.yaml
+  - shots.yaml
 
 playfields:
   playfield:

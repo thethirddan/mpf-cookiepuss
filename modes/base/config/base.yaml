@@ -51,3 +51,13 @@ variable_player:
     score: 50
   s_three_bank_standup_active:
     score: 1000
+  left_orbit_hit:
+    score: 101
+  right_orbit_hit:
+    score: 103
+  inner_orbit_hit:
+    score: 105
+  s_left_ramp_active:
+    score: 222
+  s_right_ramp_active:
+    score: 333

@@ -81,6 +81,17 @@ switches:
     number: 3208-22
   s_three_bank_standup:
     number: 3208-21
+  s_left_orbit:
+    number: 0804b-4
+  s_inner_orbit:
+    number: 0804b-5
+  s_left_ramp:
+    number: 0804b-6
+  s_right_ramp:
+    number: 0804b-7
+  s_right_orbit:
+    number: 0804-7
+  
 
 drop_targets:
   bottom:
