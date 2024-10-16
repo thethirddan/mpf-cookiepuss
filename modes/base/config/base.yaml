@@ -5,9 +5,6 @@ mode:
   start_events: ball_started
   priority: 100
 
-config:
-  - sounds.yaml
-
 slide_player:
   mode_base_started: base
 
@@ -85,6 +82,8 @@ sound_player:
   mode_miked_stopped:
     makeSomeNoise_music:
       action: stop
+    play_makesomenoise_song:
+      action: stop
     Randomizer:
       action: play
       #loops: -1
@@ -96,18 +95,15 @@ sound_player:
       #loops: -1
       bus: music
       fade_in: 300ms
-      events_when_stopped: play_next_random_song
-  play_next_random_song:
-    Randomizer:
-      action: play
-      #loops: -1
-      bus: music
-      fade_in: 300ms
       events_when_stopped: play_random_song
   mode_base_stopped:
     Randomizer:
       action: stop
+    play_random_song:
+      action: stop
     makeSomeNoise_music:
+      action: stop
+    play_makesomenoise_song:
       action: stop
   play_makesomenoise_song:
     action: play
