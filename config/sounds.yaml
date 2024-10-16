@@ -40,7 +40,6 @@ sound_player:
   mode_base_stopped:
     Randomizer:
       action: stop
-  mode_base_stopped:
     makeSomeNoise_music:
       action: stop
     
