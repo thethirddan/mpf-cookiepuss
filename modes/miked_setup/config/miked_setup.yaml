@@ -10,7 +10,7 @@ counters:
   miked_counter:
     count_events: s_spinner_active
     starting_count: 0
-    count_complete_value: 30
+    count_complete_value: {(current_player.miked_modes_started * 30) + 30}
     count_interval: 1
     direction: up
     persist_state: true
