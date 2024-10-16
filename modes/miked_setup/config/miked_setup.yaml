@@ -8,6 +8,8 @@ mode:
 
 counters:
   miked_counter:
+    reset_on_complete: true
+    disable_on_complete: false 
     count_events: s_spinner_active
     starting_count: 0
     count_complete_value: current_player.miked_modes_started * 30 + 30
@@ -16,7 +18,6 @@ counters:
     persist_state: true
     events_when_complete: miked_start
     debug: true
-    reset_on_complete: true
 
 variable_player:
   logicblock_miked_counter_updated:
