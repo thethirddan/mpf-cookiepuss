@@ -105,10 +105,9 @@ sound_player:
       action: stop
     play_makesomenoise_song:
       action: stop
-  #play_makesomenoise_song:
-  #  makeSomeNoise_music:
-  #    action: play
-  #    #loops: -1
-  #    bus: music
-  #    fade_in: 300ms
-  #    events_when_stopped: play_makesomenoise_song
+  play_makesomenoise_song:
+    makeSomeNoise_music:
+      action: play
+      bus: music
+      fade_in: 300ms
+      events_when_stopped: play_makesomenoise_song
