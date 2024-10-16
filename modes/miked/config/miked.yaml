@@ -39,4 +39,3 @@ timers:
       - action: add
         event: s_right_lower_pop_active
         value: 1
-

@@ -61,7 +61,6 @@ config:
   - lights.yaml
   - coils.yaml
   - switches.yaml
-  - sounds.yaml
   - variables.yaml
   - multiball.yaml
   - shots.yaml

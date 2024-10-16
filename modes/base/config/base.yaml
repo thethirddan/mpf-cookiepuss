@@ -64,3 +64,54 @@ variable_player:
     score: 222
   s_right_ramp_active:
     score: 333
+
+sound_player:
+  mode_base_started:
+    Randomizer:
+      action: play
+      #loops: -1
+      bus: music
+      fade_in: 300ms
+      events_when_stopped: play_random_song
+  mode_miked_started:
+    Randomizer:
+      action: stop
+    makeSomeNoise_music:
+      action: play
+      #loops: -1
+      bus: music
+      fade_in: 300ms
+      events_when_stopped: play_makesomenoise_song
+  mode_miked_stopped:
+    makeSomeNoise_music:
+      action: stop
+    Randomizer:
+      action: play
+      #loops: -1
+      bus: music
+      fade_in: 300ms
+  play_random_song:
+    Randomizer:
+      action: play
+      #loops: -1
+      bus: music
+      fade_in: 300ms
+      events_when_stopped: play_next_random_song
+  play_next_random_song:
+    Randomizer:
+      action: play
+      #loops: -1
+      bus: music
+      fade_in: 300ms
+      events_when_stopped: play_random_song
+  mode_base_stopped:
+    Randomizer:
+      action: stop
+    makeSomeNoise_music:
+      action: stop
+  play_makesomenoise_song:
+    action: play
+      #loops: -1
+      bus: music
+      fade_in: 300ms
+      events_when_stopped: play_makesomenoise_song
