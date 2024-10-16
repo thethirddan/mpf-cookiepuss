@@ -1,7 +1,7 @@
 #config_version=6
 
 multiballs:
-  adrock:
+  brassmonkey:
     ball_count: 3
-    start_events: adrock_start
+    start_events: brassmonkey_start
     shoot_again: 10s

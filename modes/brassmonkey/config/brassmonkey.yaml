@@ -5,11 +5,11 @@
 # But not during the shoot_again period.
 
 slide_player:
-  mode_adrock_started: adrock
+  mode_brassmonkey_started: brassmonkey
 
 mode:
-  start_events: adrock_start
-  stop_events: multiball_adrock_ended
+  start_events: brassmonkey_start
+  stop_events: multiball_brassmonkey_ended
   priority: 305
 
 variable_player:
