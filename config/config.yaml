@@ -142,8 +142,8 @@ modes:
   - attract
   - skillshot
   - spinner_setup
-  - miked
-  - adrock
-  - dj
-  - girls
-  - yauch
+  - spinner/miked
+  - spinner/adrock
+  - spinner/dj
+  - spinner/girls
+  - spinner/yauch
