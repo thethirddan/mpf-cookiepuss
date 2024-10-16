@@ -16,7 +16,7 @@ counters:
     persist_state: true
     events_when_complete: miked_start
     debug: true
-    restart_events: ball_started, mode_miked_stopped
+    reset_on_complete: true
 
 variable_player:
   logicblock_miked_counter_updated:
