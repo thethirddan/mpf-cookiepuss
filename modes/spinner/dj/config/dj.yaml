@@ -1,0 +1,44 @@
+#config_version=6
+
+slide_player:
+  mode_dj_started: dj
+
+mode:
+  start_events: dj_start
+  stop_events: timer_dj_timer_complete
+  priority: 300
+
+variable_player:
+  s_pop_standup_active:
+    score: 1000|block
+  s_upper_pop_standup_active:
+    score: 1000|block
+  s_tshirt_top_standup_active:
+    score: 1000|block
+  s_tshirt_bottom_standup_active:
+    score: 1000|block
+  timer_dj_timer_tick:
+    dj_timer:
+      int: device.timers.dj_timer.ticks
+      action: set
+
+timers:
+  dj_timer:
+    start_value: 10
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: mode_dj_started
+      - action: add
+        event: s_pop_standup_active
+        value: 5
+      - action: add
+        event: s_upper_pop_standup_active
+        value: 5
+      - action: add
+        event: s_tshirt_top_standup_active
+        value: 5
+      - action: add
+        event: s_tshirt_bottom_standup_active
+        value: 5

@@ -1,6 +1,6 @@
 
 # POW
-yt-dlp -x --audio-format mp3 https://www.youtube.com/watch?v=qJ3njB0vaJo
+yt-dlp -x --audio-format mp3 https://www.youtube.com/watch?v=4gRZrMcOKIc
 
 then convert from mp3 to ogg
 

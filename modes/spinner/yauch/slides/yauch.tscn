@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://di01qw5v58ra7"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_qmcfy"]
+[ext_resource type="Texture2D" uid="uid://bmelrn7ml1g7r" path="res://assets/Adam-Yauch-Bass-1024x683.webp" id="2_y4yvm"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_vueb6"]
+
+[node name="Base" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_qmcfy")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(574.504, 392)
+scale = Vector2(1.13616, 1.13616)
+texture = ExtResource("2_y4yvm")
+
+[node name="score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 51.0
+offset_right = 1151.0
+offset_bottom = 565.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 100
+text = "1,000,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_vueb6")
+variable_name = "score"
+comma_separate = true
+min_digits = 2

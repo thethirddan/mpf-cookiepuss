@@ -1,6 +1,8 @@
 #config_version=6
 #skillshot
 
+#TODO: add sneak in skill shot
+
 mode:
   start_events: ball_out
   stop_events:

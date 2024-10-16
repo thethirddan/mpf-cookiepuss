@@ -24,7 +24,7 @@ variable_player:
 # TODO: add a pop group that has one event
 timers:
   miked_timer:
-    start_value: 30
+    start_value: 10
     end_value: 0
     direction: down
     control_events:

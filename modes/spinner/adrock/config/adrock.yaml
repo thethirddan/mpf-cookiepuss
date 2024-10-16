@@ -1,0 +1,34 @@
+#config_version=6
+
+slide_player:
+  mode_adrock_started: adrock
+
+mode:
+  start_events: adrock_start
+  stop_events: timer_adrock_timer_complete
+  priority: 300
+
+variable_player:
+  s_left_slingshot_active:
+    score: 1000|block
+  s_right_slingshot_active:
+    score: 1000|block
+  timer_adrock_timer_tick:
+    adrock_timer:
+      int: device.timers.adrock_timer.ticks
+      action: set
+
+timers:
+  adrock_timer:
+    start_value: 10
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: mode_adrock_started
+      - action: add
+        event: s_left_slingshot_active
+        value: 1
+      - action: add
+        event: s_right_slingshot_active
+        value: 1

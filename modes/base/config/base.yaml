@@ -13,6 +13,10 @@ variable_player:
     miked_modes_started: 1
   adrock_start:
     adrock_modes_started: 1
+  s_right_outlane_active:
+    score: 500
+  s_left_outlane_active:
+    score: 500
   s_right_inlane_active:
     score: 100
   s_left_inlane_active:

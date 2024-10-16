@@ -1,6 +1,5 @@
 #config_version=6
 
-    
 variable_player:
   increase_main_volume:
     fast_audio_main_volume:

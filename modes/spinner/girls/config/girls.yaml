@@ -1,0 +1,155 @@
+#config_version=6
+
+slide_player:
+  mode_girls_started: girls
+
+mode:
+  start_events: girls_start
+  stop_events: timer_girls_timer_complete
+  priority: 300
+
+variable_player:
+  s_right_outlane_active:
+    score: 1000|block
+  s_left_outlane_active:
+    score: 1000|block
+  s_right_inlane_active:
+    score: 1000|block
+  s_left_inlane_active:
+    score: 1000|block
+  s_left_slingshot_active:
+    score: 1000|block
+  s_right_slingshot_active:
+    score: 1000|block
+  s_left_upper_pop_active:
+    score: 1000|block
+  s_center_upper_pop_active:
+    score: 1000|block
+  s_right_lower_pop_active:
+    score: 1000|block
+  s_captive_ball_active:
+    score: 1000|block
+  s_pop_standup_active:
+    score: 1000|block
+  s_upper_pop_standup_active:
+    score: 1000|block
+  s_spinner_active:
+    score: 1000|block
+  drop_target_bank_three_bank_down:
+    score: 1000|block
+  drop_target_bottom_down:
+    score: 1000|block
+  drop_target_middle_down:
+    score: 1000|block
+  drop_target_top_down:
+    score: 1000|block
+  s_scoop_active:
+    score: 1000|block
+  s_tshirt_top_standup_active:
+    score: 1000|block
+  s_tshirt_bottom_standup_active:
+    score: 1000|block
+  s_three_bank_standup_active:
+    score: 1000|block
+  left_orbit_hit:
+    score: 1000|block
+  right_orbit_hit:
+    score: 1000|block
+  inner_orbit_hit:
+    score: 1000|block
+  s_left_ramp_active:
+    score: 1000|block
+  s_right_ramp_active:
+    score: 1000|block
+  timer_girls_timer_tick:
+    girls_timer:
+      int: device.timers.girls_timer.ticks
+      action: set
+
+sound_player:
+  s_right_outlane_active:
+    girls_trim:
+      action: play
+  s_left_outlane_active:
+    girls_trim:
+      action: play
+  s_right_inlane_active:
+    girls_trim:
+      action: play
+  s_left_inlane_active:
+    girls_trim:
+      action: play
+  s_left_slingshot_active:
+    girls_trim:
+      action: play
+  s_right_slingshot_active:
+    girls_trim:
+      action: play
+  s_left_upper_pop_active:
+    girls_trim:
+      action: play
+  s_center_upper_pop_active:
+    girls_trim:
+      action: play
+  s_right_lower_pop_active:
+    girls_trim:
+      action: play
+  s_captive_ball_active:
+    girls_trim:
+      action: play
+  s_pop_standup_active:
+    girls_trim:
+      action: play
+  s_upper_pop_standup_active:
+    girls_trim:
+      action: play
+  s_spinner_active:
+    girls_trim:
+      action: play
+  drop_target_bank_three_bank_down:
+    girls_trim:
+      action: play
+  drop_target_bottom_down:
+    girls_trim:
+      action: play
+  drop_target_middle_down:
+    girls_trim:
+      action: play
+  drop_target_top_down:
+    girls_trim:
+      action: play
+  s_scoop_active:
+    girls_trim:
+      action: play
+  s_tshirt_top_standup_active:
+    girls_trim:
+      action: play
+  s_tshirt_bottom_standup_active:
+    girls_trim:
+      action: play
+  s_three_bank_standup_active:
+    girls_trim:
+      action: play
+  left_orbit_hit:
+    girls_trim:
+      action: play
+  right_orbit_hit:
+    girls_trim:
+      action: play
+  inner_orbit_hit:
+    girls_trim:
+      action: play
+  s_left_ramp_active:
+    girls_trim:
+      action: play
+  s_right_ramp_active:
+    girls_trim:
+      action: play
+timers:
+  girls_timer:
+    start_value: 10
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: mode_girls_started
