@@ -8,6 +8,10 @@ mode:
 slide_player:
   mode_base_started: base
 
+  mode_base_stopped:
+    base:
+      action: remove
+
 variable_player:
   miked_start:
     miked_modes_started: 1

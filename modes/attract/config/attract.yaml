@@ -3,3 +3,7 @@
 
 slide_player:
   mode_attract_started: attract
+
+  mode_attract_stopped:
+    attract:
+      action: remove
