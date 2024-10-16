@@ -1,0 +1,17 @@
+#config_version=6
+##! mode: miked_mode
+
+# This mode should end when the player gets down to one ball
+# But not during the shoot_again period.
+
+slide_player:
+  mode_adrock_started: adrock
+
+mode:
+  start_events: adrock_start
+  stop_events: multiball_adrock_ended
+  priority: 305
+
+variable_player:
+  s_three_bank_standup_active:
+    score: 5000|block
