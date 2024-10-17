@@ -37,9 +37,9 @@ fast:
     sub_steps: 20
     headphones_steps: 20
 
-    default_main_volume: 50
-    default_sub_volume: 50
-    default_headphones_volume: 50
+    default_main_volume: 70
+    default_sub_volume: 80
+    default_headphones_volume: 70
 
     persist_volume_settings: true
 
