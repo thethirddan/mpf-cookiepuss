@@ -63,7 +63,6 @@ config:
   - switches.yaml
   - variables.yaml
   - multiball.yaml
-  - shots.yaml
 
 playfields:
   playfield:
