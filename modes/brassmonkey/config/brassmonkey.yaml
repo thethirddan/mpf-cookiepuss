@@ -15,3 +15,7 @@ mode:
 variable_player:
   s_three_bank_standup_active:
     score: 5000|block
+
+# jackpots are ramps and orbits
+# after 5 of any, innerloop is super jackpot
+# and ramps and orbits no longer jackpots
