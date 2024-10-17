@@ -9,9 +9,9 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_qmcfy")
 
-[node name="background" type="Sprite2D" parent="."]
-position = Vector2(574.504, 392)
-scale = Vector2(1.13616, 1.13616)
+[node name="Adam-yauch-bass-1024x683" type="Sprite2D" parent="."]
+position = Vector2(576.586, 372.75)
+scale = Vector2(1.15739, 1.15739)
 texture = ExtResource("2_y4yvm")
 
 [node name="score" type="Label" parent="."]

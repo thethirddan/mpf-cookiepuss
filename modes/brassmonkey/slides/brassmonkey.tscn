@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0fltnsx84tjg"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_nd0f3"]
+[ext_resource type="Texture2D" uid="uid://bx884ekf3mfae" path="res://assets/812ZynUlg9L._UF1000,1000_QL80_.jpg" id="2_d1ulm"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_p3tl2"]
+
+[node name="Base" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_nd0f3")
+
+[node name="812ZynUlg9l_Uf1000,1000Ql80" type="Sprite2D" parent="."]
+position = Vector2(568, 11)
+scale = Vector2(2.445, 2.445)
+texture = ExtResource("2_d1ulm")
+
+[node name="score" type="Label" parent="."]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -147.0
+offset_right = 1140.0
+offset_bottom = 367.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 100
+text = "1,000,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_p3tl2")
+variable_name = "score"
+comma_separate = true
+min_digits = 2

@@ -77,22 +77,14 @@ sound_player:
   mode_miked_started:
     Randomizer:
       action: stop
+    play_random_song:
+      action: stop
     makeSomeNoise_music:
       action: play
       #loops: -1
       bus: music
       fade_in: 300ms
-      events_when_stopped: play_makesomenoise_song
-  mode_miked_stopped:
-    makeSomeNoise_music:
-      action: stop
-    play_makesomenoise_song:
-      action: stop
-    Randomizer:
-      action: play
-      #loops: -1
-      bus: music
-      fade_in: 300ms
+      events_when_stopped: play_random_song
   play_random_song:
     Randomizer:
       action: play
@@ -107,11 +99,17 @@ sound_player:
       action: stop
     makeSomeNoise_music:
       action: stop
-    play_makesomenoise_song:
+    brassmonkey_music:
       action: stop
-  play_makesomenoise_song:
+  mode_brassmonkey_start:
+    Randomizer:
+      action: stop
+    play_random_song:
+      action: stop
     makeSomeNoise_music:
+      action: stop
+    brassmonkey_music:
       action: play
       bus: music
       fade_in: 300ms
-      events_when_stopped: play_makesomenoise_song
+      events_when_stopped: play_random_song

@@ -9,9 +9,9 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_qmcfy")
 
-[node name="background" type="Sprite2D" parent="."]
-position = Vector2(575, 323)
-scale = Vector2(1.86875, 1.07981)
+[node name="2-djs-for-the-beasties-2-very-different-styles-we-love-em-v0-j9Nbavu4Vkmd1" type="Sprite2D" parent="."]
+position = Vector2(581, 558)
+scale = Vector2(1.88185, 1.88185)
 texture = ExtResource("2_3v3p3")
 
 [node name="score" type="Label" parent="."]
