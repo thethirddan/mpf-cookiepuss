@@ -61,4 +61,4 @@ counters:
 
 variable_player:
   spinner_hit:
-    miked_count_var: 1
+    miked_count: 1

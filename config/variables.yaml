@@ -12,12 +12,15 @@ player_vars:
   miked_timer:
     initial_value: 0
     value_type: int
-  miked_count_var:
+  miked_count:
     initial_value: 0
     value_type: int
-  brassmonkey_count_var:
+  brassmonkey_count:
     initial_value: 0
     value_type: int
   brassmonkey_modes_started:
+    initial_value: 0
+    value_type: int
+  brassmonkey_multiplier_count:
     initial_value: 0
     value_type: int

@@ -15,7 +15,12 @@ mode:
 variable_player:
   s_three_bank_standup_active:
     score: 5000|block
-
 # jackpots are ramps and orbits
 # after 5 of any, innerloop is super jackpot
 # and ramps and orbits no longer jackpots
+
+# Brass monkey SETUP mode:
+# knock all 3 drop targets down, lights an insert, knock all 3 down again, light another insert, ...
+# 2x, 3x, 5x multiplier for brass monkey mode, can I round?
+# v1, might be 2,3,4
+# reset for every multiball

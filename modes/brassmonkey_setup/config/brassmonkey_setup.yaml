@@ -20,6 +20,6 @@ counters:
 
 variable_player:
   logicblock_brassmonkey_counter_updated:
-    brassmonkey_count_var:
+    brassmonkey_count:
       int: value
       action: set
