@@ -43,9 +43,9 @@ fast:
 
     persist_volume_settings: true
 
-    max_hw_volume_main: 63
-    max_hw_volume_sub: 63
-    max_hw_volume_headphones: 63
+    max_hw_volume_main: 85
+    max_hw_volume_sub: 85
+    max_hw_volume_headphones: 85
 
     main_levels_list: None
     sub_levels_list: None
