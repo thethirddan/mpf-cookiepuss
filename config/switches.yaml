@@ -91,7 +91,6 @@ switches:
     number: 0804b-7
   s_right_orbit:
     number: 0804-7
-  
 
 drop_targets:
   bottom:

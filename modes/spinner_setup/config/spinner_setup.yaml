@@ -14,7 +14,7 @@ mode:
 
 counters:
   miked_counter:
-    count_events: s_spinner_active
+    count_events: spinner_hit
     starting_count: 0
     count_complete_value: 30
     count_interval: 1
@@ -23,7 +23,7 @@ counters:
     events_when_complete: miked_start
     debug: true
   yauch_counter:
-    count_events: s_spinner_active
+    count_events: spinner_hit
     starting_count: 0
     count_complete_value: 60
     count_interval: 1
@@ -32,7 +32,7 @@ counters:
     events_when_complete: yauch_start
     debug: true
   adrock_counter:
-    count_events: s_spinner_active
+    count_events: spinner_hit
     starting_count: 0
     count_complete_value: 90
     count_interval: 1
@@ -41,7 +41,7 @@ counters:
     events_when_complete: adrock_start
     debug: true
   dj_counter:
-    count_events: s_spinner_active
+    count_events: spinner_hit
     starting_count: 0
     count_complete_value: 120
     count_interval: 1
@@ -50,7 +50,7 @@ counters:
     events_when_complete: dj_start
     debug: true
   girls_counter:
-    count_events: s_spinner_active
+    count_events: spinner_hit
     starting_count: 0
     count_complete_value: 150
     count_interval: 1
@@ -60,6 +60,5 @@ counters:
     debug: true
 
 variable_player:
-  s_spinner_active:
+  spinner_hit:
     miked_count_var: 1
-

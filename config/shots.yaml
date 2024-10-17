@@ -1,13 +1,56 @@
 #config_version=6
 
+shots:
+  scoop:
+    switch: s_scoop
+  captive_ball:
+    switch: s_captive_ball
+    delay_switch:
+      s_captive_ball: 1s
+  spinner:
+    switch: s_spinner
+  right_ramp:
+    switch: s_right_ramp
+  left_ramp:
+    switch: s_left_ramp
+  upper_pop_standup:
+    switch: s_upper_pop_standup
+  tshirt_top_standup:
+    switch: s_tshirt_top_standup
+  tshirt_bottom_standup:
+    switch: s_tshirt_bottom_standup
+  three_bank_standup:
+    switch: s_three_bank_standup
+  pop_standup:
+    switch: s_pop_standup
+  three_bank_bottom:
+    switch: s_three_bank_bottom
+  three_bank_middle:
+    switch: s_three_bank_middle
+  three_bank_top:
+    switch: s_three_bank_top
+  right_inlane:
+    switch: s_right_inlane
+  left_inlane:
+    switch: s_left_inlane
+  right_outlane:
+    switch: s_right_outlane
+  left_outlane:
+    switch: s_left_outlane
 
 sequence_shots:
   left_orbit:
     switch_sequence: s_left_orbit, s_right_orbit
     sequence_timeout: 2s
   right_orbit:
-    switch_sequence: s_right_orbit, s_left_orbit 
+    switch_sequence: s_right_orbit, s_left_orbit
     sequence_timeout: 2s
   inner_orbit:
     switch_sequence: s_inner_orbit, s_right_orbit
     sequence_timeout: 2s
+
+shot_groups:
+  ramps:
+    shots: right_ramp, left_ramp
+  orbits:
+    shots: left_orbit, right_orbit, inner_orbit

@@ -13,13 +13,13 @@ variable_player:
     miked_modes_started: 1
   brassmonkey_start:
     brassmonkey_modes_started: 1
-  s_right_outlane_active:
+  right_outlane_hit:
     score: 500
-  s_left_outlane_active:
+  left_outlane_hit:
     score: 500
-  s_right_inlane_active:
+  right_inlane_hit:
     score: 100
-  s_left_inlane_active:
+  left_inlane_hit:
     score: 100
   s_left_slingshot_active:
     score: 50
@@ -31,13 +31,13 @@ variable_player:
     score: 25
   s_right_lower_pop_active:
     score: 25
-  s_captive_ball_active:
+  captive_ball_hit:
     score: 1000
-  s_pop_standup_active:
+  pop_standup_hit:
     score: 50
-  s_upper_pop_standup_active:
+  upper_pop_standup_hit:
     score: 50
-  s_spinner_active:
+  spinner_hit:
     score: 3
   drop_target_bank_three_bank_down:
     score: 666
@@ -47,13 +47,13 @@ variable_player:
     score: 3
   drop_target_top_down:
     score: 4
-  s_scoop_active:
+  scoop_hit:
     score: 500
-  s_tshirt_top_standup_active:
+  tshirt_top_standup_hit:
     score: 50
-  s_tshirt_bottom_standup_active:
+  tshirt_bottom_standup_hit:
     score: 50
-  s_three_bank_standup_active:
+  three_bank_standup_hit:
     score: 1000
   left_orbit_hit:
     score: 101
@@ -61,9 +61,9 @@ variable_player:
     score: 103
   inner_orbit_hit:
     score: 105
-  s_left_ramp_active:
+  left_ramp_hit:
     score: 222
-  s_right_ramp_active:
+  right_ramp_hit:
     score: 333
 
 sound_player:

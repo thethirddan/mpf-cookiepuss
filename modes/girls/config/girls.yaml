@@ -9,13 +9,13 @@ mode:
   priority: 300
 
 variable_player:
-  s_right_outlane_active:
+  right_outlane_hit:
     score: 1000|block
-  s_left_outlane_active:
+  left_outlane_hit:
     score: 1000|block
-  s_right_inlane_active:
+  right_inlane_hit:
     score: 1000|block
-  s_left_inlane_active:
+  left_inlane_hit:
     score: 1000|block
   s_left_slingshot_active:
     score: 1000|block
@@ -27,13 +27,13 @@ variable_player:
     score: 1000|block
   s_right_lower_pop_active:
     score: 1000|block
-  s_captive_ball_active:
+  captive_ball_hit:
     score: 1000|block
-  s_pop_standup_active:
+  pop_standup_hit:
     score: 1000|block
-  s_upper_pop_standup_active:
+  upper_pop_standup_hit:
     score: 1000|block
-  s_spinner_active:
+  spinner_hit:
     score: 1000|block
   drop_target_bank_three_bank_down:
     score: 1000|block
@@ -43,13 +43,13 @@ variable_player:
     score: 1000|block
   drop_target_top_down:
     score: 1000|block
-  s_scoop_active:
+  scoop_hit:
     score: 1000|block
-  s_tshirt_top_standup_active:
+  tshirt_top_standup_hit:
     score: 1000|block
-  s_tshirt_bottom_standup_active:
+  tshirt_bottom_standup_hit:
     score: 1000|block
-  s_three_bank_standup_active:
+  three_bank_standup_hit:
     score: 1000|block
   left_orbit_hit:
     score: 1000|block
@@ -57,9 +57,9 @@ variable_player:
     score: 1000|block
   inner_orbit_hit:
     score: 1000|block
-  s_left_ramp_active:
+  left_ramp_hit:
     score: 1000|block
-  s_right_ramp_active:
+  right_ramp_hit:
     score: 1000|block
   timer_girls_timer_tick:
     girls_timer:
@@ -67,16 +67,16 @@ variable_player:
       action: set
 
 sound_player:
-  s_right_outlane_active:
+  right_outlane_hit:
     girls_trim:
       action: play
-  s_left_outlane_active:
+  left_outlane_hit:
     girls_trim:
       action: play
-  s_right_inlane_active:
+  right_inlane_hit:
     girls_trim:
       action: play
-  s_left_inlane_active:
+  left_inlane_hit:
     girls_trim:
       action: play
   s_left_slingshot_active:
@@ -94,16 +94,16 @@ sound_player:
   s_right_lower_pop_active:
     girls_trim:
       action: play
-  s_captive_ball_active:
+  captive_ball_hit:
     girls_trim:
       action: play
-  s_pop_standup_active:
+  pop_standup_hit:
     girls_trim:
       action: play
-  s_upper_pop_standup_active:
+  upper_pop_standup_hit:
     girls_trim:
       action: play
-  s_spinner_active:
+  spinner_hit:
     girls_trim:
       action: play
   drop_target_bank_three_bank_down:
@@ -118,16 +118,16 @@ sound_player:
   drop_target_top_down:
     girls_trim:
       action: play
-  s_scoop_active:
+  scoop_hit:
     girls_trim:
       action: play
-  s_tshirt_top_standup_active:
+  tshirt_top_standup_hit:
     girls_trim:
       action: play
-  s_tshirt_bottom_standup_active:
+  tshirt_bottom_standup_hit:
     girls_trim:
       action: play
-  s_three_bank_standup_active:
+  three_bank_standup_hit:
     girls_trim:
       action: play
   left_orbit_hit:
@@ -139,12 +139,13 @@ sound_player:
   inner_orbit_hit:
     girls_trim:
       action: play
-  s_left_ramp_active:
+  left_ramp_hit:
     girls_trim:
       action: play
-  s_right_ramp_active:
+  right_ramp_hit:
     girls_trim:
       action: play
+
 timers:
   girls_timer:
     start_value: 10
