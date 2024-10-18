@@ -3,6 +3,8 @@
 
 config:
   - shots.yaml
+  - variables.yaml
+  - sounds.yaml
 
 mode:
   start_events: ball_started
@@ -11,108 +13,3 @@ mode:
 slide_player:
   mode_base_started: base
 
-variable_player:
-  miked_start:
-    miked_modes_started: 1
-  brassmonkey_start:
-    brassmonkey_modes_started: 1
-  right_outlane_hit:
-    score: 500
-  left_outlane_hit:
-    score: 500
-  right_inlane_hit:
-    score: 100
-  left_inlane_hit:
-    score: 100
-  s_left_slingshot_active:
-    score: 50
-  s_right_slingshot_active:
-    score: 50
-  s_left_upper_pop_active:
-    score: 25
-  s_center_upper_pop_active:
-    score: 25
-  s_right_lower_pop_active:
-    score: 25
-  captive_ball_hit:
-    score: 1000
-  pop_standup_hit:
-    score: 50
-  upper_pop_standup_hit:
-    score: 50
-  spinner_hit:
-    score: 3
-  drop_target_bank_three_bank_down:
-    score: 666
-  drop_target_bottom_down:
-    score: 2
-  drop_target_middle_down:
-    score: 3
-  drop_target_top_down:
-    score: 4
-  scoop_hit:
-    score: 500
-  tshirt_top_standup_hit:
-    score: 50
-  tshirt_bottom_standup_hit:
-    score: 50
-  three_bank_standup_hit:
-    score: 1000
-  left_orbit_hit:
-    score: 101
-  right_orbit_hit:
-    score: 103
-  inner_orbit_hit:
-    score: 105
-  left_ramp_hit:
-    score: 222
-  right_ramp_hit:
-    score: 333
-
-sound_player:
-  mode_base_started:
-    Randomizer:
-      action: play
-      #loops: -1
-      bus: music
-      fade_in: 300ms
-      events_when_stopped: play_random_song
-  mode_miked_started:
-    Randomizer:
-      action: stop
-    play_random_song:
-      action: stop
-    makeSomeNoise_music:
-      action: play
-      #loops: -1
-      bus: music
-      fade_in: 300ms
-      events_when_stopped: play_random_song
-  play_random_song:
-    Randomizer:
-      action: play
-      #loops: -1
-      bus: music
-      fade_in: 300ms
-      events_when_stopped: play_random_song
-  mode_base_stopped:
-    Randomizer:
-      action: stop
-    play_random_song:
-      action: stop
-    makeSomeNoise_music:
-      action: stop
-    brassmonkey_music:
-      action: stop
-  mode_brassmonkey_start:
-    Randomizer:
-      action: stop
-    play_random_song:
-      action: stop
-    makeSomeNoise_music:
-      action: stop
-    brassmonkey_music:
-      action: play
-      bus: music
-      fade_in: 300ms
-      events_when_stopped: play_random_song
