@@ -9,7 +9,6 @@ mode:
   priority: 300
 
 config:
-  - shots.yaml
   - variables_girls.yaml
   - sounds_girls.yaml
 
