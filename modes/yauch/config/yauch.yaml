@@ -20,7 +20,7 @@ variable_player:
 
 timers:
   yauch_timer:
-    start_value: 10
+    start_value: 15
     end_value: 0
     direction: down
     control_events:
