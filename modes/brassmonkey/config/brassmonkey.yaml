@@ -10,7 +10,7 @@ slide_player:
 mode:
   start_events: brassmonkey_start
   stop_events: multiball_brassmonkey_ended
-  priority: 305
+  priority: 400
 
 variable_player:
   s_three_bank_standup_active:

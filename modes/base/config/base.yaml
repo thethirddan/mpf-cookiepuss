@@ -2,9 +2,9 @@
 ##! mode: base_mode
 
 config:
-  - shots.yaml
-  - variables.yaml
-  - sounds.yaml
+  - shots_base.yaml
+  - variables_base.yaml
+  - sounds_base.yaml
 
 mode:
   start_events: ball_started

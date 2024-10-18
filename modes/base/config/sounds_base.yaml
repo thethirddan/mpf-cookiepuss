@@ -3,16 +3,14 @@
 
 sound_player:
   mode_base_started:
-    brassmonkey_music:
+    Randomizer:
       action: play
-      #loops: -1
       bus: music
       fade_in: 300ms
       events_when_stopped: play_random_song
   play_random_song:
     Randomizer:
       action: play
-      #loops: -1
       bus: music
       fade_in: 300ms
       events_when_stopped: play_random_song
@@ -23,13 +21,30 @@ sound_player:
       action: stop
     brassmonkey_music:
       action: stop
-  mode_brassmonkey_start:
-    Randomizer:
+    makeSomeNoise_music:
       action: stop
-    play_random_song:
-      action: stop
+  brassmonkey_start:
     brassmonkey_music:
       action: play
       bus: music
       fade_in: 300ms
       events_when_stopped: play_random_song
+    Randomizer:
+      action: stop
+    play_random_song:
+      action: stop
+    makeSomeNoise_music:
+      action: stop
+  miked_start:
+    makeSomeNoise_music:
+      action: play
+      bus: music
+      fade_in: 300ms
+      events_when_stopped: play_random_song
+    Randomizer:
+      action: stop
+    play_random_song:
+      action: stop
+    brassmonkey_music:
+      action: stop
+    
