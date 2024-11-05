@@ -37,15 +37,15 @@ fast:
     sub_steps: 20
     headphones_steps: 20
 
-    default_main_volume: 100
-    default_sub_volume: 100
-    default_headphones_volume: 100
+    default_main_volume: 40
+    default_sub_volume: 40
+    default_headphones_volume: 40
 
     persist_volume_settings: true
 
-    max_hw_volume_main: 100
-    max_hw_volume_sub: 100
-    max_hw_volume_headphones: 100
+    max_hw_volume_main: 63
+    max_hw_volume_sub: 63
+    max_hw_volume_headphones: 63
 
     main_levels_list: None
     sub_levels_list: None
@@ -54,7 +54,7 @@ fast:
     link_sub_to_main: true
     link_headphones_to_main: true
 
-    headphones_level: headphones
+    headphones_level: line
     mute_speakers_with_headphones: true
 
 config:
