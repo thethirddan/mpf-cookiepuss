@@ -10,14 +10,39 @@ slide_player:
 mode:
   start_events: brassmonkey_start
   stop_events: multiball_brassmonkey_ended
-  priority: 305
+  priority: 400
+
+player_vars:
+  brassmonkey_shots:
+    initial_value: 0
+    value_type: int
 
 variable_player:
-  s_three_bank_standup_active:
+  three_bank_standup_hit:
     score: 5000|block
+  right_ramp_hit:
+    score: 1000|block
+    brassmonkey_shots: 1
+  left_ramp_hit:
+    score: 1000|block
+    brassmonkey_shots: 1
+  left_orbit_hit:
+    score: 1000|block
+    brassmonkey_shots: 1
+  right_orbit_hit:
+    score: 1000|block
+    brassmonkey_shots: 1
+  inner_orbit_hit:
+    score: 1000|block
+    brassmonkey_shots: 1
+
+# when we get lights, light all ramps and orbits
+# light super jackpot flashing on 5th ramp/orbit
 # jackpots are ramps and orbits
 # after 5 of any, innerloop is super jackpot
 # and ramps and orbits no longer jackpots
+
+# if you hit super jackpot, double all scores and start again
 
 # Brass monkey SETUP mode:
 # knock all 3 drop targets down, lights an insert, knock all 3 down again, light another insert, ...

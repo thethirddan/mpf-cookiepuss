@@ -21,6 +21,6 @@ player_vars:
   brassmonkey_modes_started:
     initial_value: 0
     value_type: int
-  brassmonkey_multiplier_count:
-    initial_value: 0
+  brassmonkey_multiplier:
+    initial_value: 1
     value_type: int
