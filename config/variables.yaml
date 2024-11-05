@@ -24,3 +24,6 @@ player_vars:
   brassmonkey_multiplier:
     initial_value: 1
     value_type: int
+  brassmonkey_shots:
+    initial_value: 0
+    value_type: int

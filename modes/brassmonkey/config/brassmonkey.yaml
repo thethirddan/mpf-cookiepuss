@@ -12,12 +12,11 @@ mode:
   stop_events: multiball_brassmonkey_ended
   priority: 400
 
-player_vars:
-  brassmonkey_shots:
-    initial_value: 0
-    value_type: int
-
 variable_player:
+  mode_brassmonkey_started:
+    brassmonkey_shots:
+      action: set
+      int: 0
   three_bank_standup_hit:
     score: 5000|block
   right_ramp_hit:
@@ -35,7 +34,6 @@ variable_player:
   inner_orbit_hit:
     score: 1000|block
     brassmonkey_shots: 1
-
 # when we get lights, light all ramps and orbits
 # light super jackpot flashing on 5th ramp/orbit
 # jackpots are ramps and orbits
