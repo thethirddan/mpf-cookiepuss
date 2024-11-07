@@ -1,15 +1,14 @@
 #config_version=6
 
-
 sound_player:
   mode_base_started:
-    Randomizer:
+    Pow_music: #Randomizer:
       action: play
       bus: music
       fade_in: 300ms
       events_when_stopped: play_random_song
   play_random_song:
-    Randomizer:
+    Pow_music: #Randomizer:
       action: play
       bus: music
       fade_in: 300ms
@@ -23,6 +22,8 @@ sound_player:
       action: stop
     makeSomeNoise_music:
       action: stop
+    Pow_music:
+      action: stop
   brassmonkey_start:
     brassmonkey_music:
       action: play
@@ -34,6 +35,8 @@ sound_player:
     play_random_song:
       action: stop
     makeSomeNoise_music:
+      action: stop
+    Pow_music:
       action: stop
   miked_start:
     makeSomeNoise_music:
@@ -47,4 +50,5 @@ sound_player:
       action: stop
     brassmonkey_music:
       action: stop
-    
+    Pow_music:
+      action: stop
