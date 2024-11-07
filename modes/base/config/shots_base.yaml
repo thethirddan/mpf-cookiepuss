@@ -1,5 +1,16 @@
 #config_version=6
 
+sequence_shots:
+  left_orbit:
+    switch_sequence: s_left_orbit, s_right_orbit
+    sequence_timeout: 2s
+  right_orbit:
+    switch_sequence: s_right_orbit, s_left_orbit
+    sequence_timeout: 2s
+  inner_orbit:
+    switch_sequence: s_inner_orbit, s_right_orbit
+    sequence_timeout: 2s
+
 shots:
   scoop:
     switch: s_scoop
@@ -37,21 +48,15 @@ shots:
     switch: s_right_outlane
   left_outlane:
     switch: s_left_outlane
-
-sequence_shots:
-  left_orbit:
-    switch_sequence: s_left_orbit, s_right_orbit
-    sequence_timeout: 2s
-  right_orbit:
-    switch_sequence: s_right_orbit, s_left_orbit
-    sequence_timeout: 2s
-  inner_orbit:
-    switch_sequence: s_inner_orbit, s_right_orbit
-    sequence_timeout: 2s
+  left_orbit_shot:
+    hit_events: left_orbit_hit
+  right_orbit_shot:
+    hit_events: right_orbit_hit
+  inner_orbit_shot:
+    hit_events: inner_orbit_hit
 
 shot_groups:
   ramps:
     shots: right_ramp, left_ramp
-  #orbits:
-  #  shots: left_orbit, right_orbit, inner_orbit
-  # how do we add groups of sequence shots?
+  orbits:
+    shots: left_orbit_shot, right_orbit_shot, inner_orbit_shot
