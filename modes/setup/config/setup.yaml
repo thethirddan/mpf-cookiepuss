@@ -1,0 +1,74 @@
+#config_version=6
+##! mode: miked_setup_mode
+
+# mike d super pops= 30
+# yauch supreme ramps 60
+# adrock power slings 90
+# dj herc vs mix master mike target snipe 120
+# girls frenzy 150
+
+mode:
+  start_events: ball_started, mode_miked_stopped, mode_yauch_stopped, mode_adrock_stopped, mode_dj_stopped, mode_girls_stopped, mode_brassmonkey_stopped
+  stop_events: miked_start, yauch_start, adrock_start, dj_start, girls_start, brassmonkey_start
+  priority: 200
+
+counters:
+  miked_counter:
+    count_events: spinner_hit
+    starting_count: 0
+    count_complete_value: 30
+    count_interval: 1
+    direction: up
+    persist_state: true
+    events_when_complete: miked_start
+    debug: true
+  yauch_counter:
+    count_events: spinner_hit
+    starting_count: 0
+    count_complete_value: 60
+    count_interval: 1
+    direction: up
+    persist_state: true
+    events_when_complete: yauch_start
+    debug: true
+  adrock_counter:
+    count_events: spinner_hit
+    starting_count: 0
+    count_complete_value: 90
+    count_interval: 1
+    direction: up
+    persist_state: true
+    events_when_complete: adrock_start
+    debug: true
+  dj_counter:
+    count_events: spinner_hit
+    starting_count: 0
+    count_complete_value: 120
+    count_interval: 1
+    direction: up
+    persist_state: true
+    events_when_complete: dj_start
+    debug: true
+  girls_counter:
+    count_events: spinner_hit
+    starting_count: 0
+    count_complete_value: 150
+    count_interval: 1
+    direction: up
+    persist_state: true
+    events_when_complete: girls_start
+    debug: true
+  ramps_counter:
+    count_events: ramps_hit
+    starting_count: 0
+    count_interval: 1
+    direction: up
+    persist_state: true
+    debug: true
+    #reset_events: #ramp mode finished
+
+variable_player:
+  logicblock_ramps_counter_updated:
+    ramps_count:
+      int: value
+      action: set
