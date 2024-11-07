@@ -47,11 +47,11 @@ variable_player:
     score: 50
   three_bank_standup_hit:
     score: 1000
-  left_orbit_hit:
+  left_orbit_shot_hit:
     score: 101
-  right_orbit_hit:
+  right_orbit_shot_hit:
     score: 103
-  inner_orbit_hit:
+  inner_orbit_shot_hit:
     score: 105
   left_ramp_hit:
     score: 222

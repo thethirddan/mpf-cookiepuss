@@ -28,10 +28,6 @@ variable_player:
   skill_success:
     score: 4444
 
-shots:
-  skill_captive:
-    switch: s_captive_ball
-
 state_machines:
   skillshot_success:
     debug: true
@@ -47,7 +43,7 @@ state_machines:
     transitions:
       - source: start
         target: success
-        events: s_captive_ball_active
+        events: captive_ball_hit
       - source: start
         target: failed
         events: timer_skillshot_timeout_complete

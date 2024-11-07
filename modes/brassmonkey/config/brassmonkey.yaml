@@ -12,28 +12,25 @@ mode:
   stop_events: multiball_brassmonkey_ended
   priority: 400
 
+counters:
+  brassmonkey_jackpot_counter:
+    count_events: ramps_hit, orbits_hit
+    starting_count: 0
+    count_complete_value: 5
+    count_interval: 1
+    direction: up
+    persist_state: true
+    events_when_complete: brassmonkey_jackpot_start
+    restart_events: mode_brassmonkey_jackpot_stopped
+    debug: true
+
 variable_player:
-  mode_brassmonkey_started:
-    brassmonkey_shots:
-      action: set
-      int: 0
   three_bank_standup_hit:
-    score: 5000|block
-  right_ramp_hit:
-    score: 1000|block
-    brassmonkey_shots: 1
-  left_ramp_hit:
-    score: 1000|block
-    brassmonkey_shots: 1
-  left_orbit_hit:
-    score: 1000|block
-    brassmonkey_shots: 1
-  right_orbit_hit:
-    score: 1000|block
-    brassmonkey_shots: 1
-  inner_orbit_hit:
-    score: 1000|block
-    brassmonkey_shots: 1
+    score: current_player.brassmonkey_multiplier * 5000|block
+  ramps_hit:
+    score: current_player.brassmonkey_multiplier * 1000|block
+  orbits_hit:
+    score: current_player.brassmonkey_multiplier * 1000|block
 # when we get lights, light all ramps and orbits
 # light super jackpot flashing on 5th ramp/orbit
 # jackpots are ramps and orbits

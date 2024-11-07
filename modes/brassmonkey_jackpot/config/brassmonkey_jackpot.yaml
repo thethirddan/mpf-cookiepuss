@@ -1,0 +1,28 @@
+#config_version=6
+##! mode: brassmonkey_jackpo
+
+slide_player:
+  mode_brassmonkey_jackpot_started: brassmonkey_jackpot
+
+mode:
+  start_events: brassmonkey_jackpot_start
+  stop_events: inner_orbit_shot_hit
+  priority: 500
+
+variable_player:
+  inner_orbit_shot_hit:
+    score: current_player.brassmonkey_multiplier * 10000|block
+    brassmonkey_multiplier: 1
+# when we get lights, light all ramps and orbits
+# light super jackpot flashing on 5th ramp/orbit
+# jackpots are ramps and orbits
+# after 5 of any, innerloop is super jackpot
+# and ramps and orbits no longer jackpots
+
+# if you hit super jackpot, double all scores and start again
+
+# Brass monkey SETUP mode:
+# knock all 3 drop targets down, lights an insert, knock all 3 down again, light another insert, ...
+# 2x, 3x, 5x multiplier for brass monkey mode, can I round?
+# v1, might be 2,3,4
+# reset for every multiball
