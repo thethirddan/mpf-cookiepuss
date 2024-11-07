@@ -52,6 +52,6 @@ sequence_shots:
 shot_groups:
   ramps:
     shots: right_ramp, left_ramp
-  #orbits:
-  #  shots: left_orbit, right_orbit, inner_orbit
+  orbits:
+    shots: left_orbit, right_orbit, inner_orbit
   # how do we add groups of sequence shots?
