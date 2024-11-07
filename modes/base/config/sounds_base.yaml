@@ -2,13 +2,13 @@
 
 sound_player:
   mode_base_started:
-    Pow_music: #Randomizer:
+    Randomizer:
       action: play
       bus: music
       fade_in: 300ms
       events_when_stopped: play_random_song
   play_random_song:
-    Pow_music: #Randomizer:
+    Randomizer:
       action: play
       bus: music
       fade_in: 300ms
@@ -22,33 +22,27 @@ sound_player:
       action: stop
     makeSomeNoise_music:
       action: stop
-    Pow_music:
+  mode_brassmonkey_started:
+    Randomizer:
       action: stop
-  brassmonkey_start:
     brassmonkey_music:
       action: play
       bus: music
       fade_in: 300ms
       events_when_stopped: play_random_song
-    Randomizer:
-      action: stop
     play_random_song:
       action: stop
     makeSomeNoise_music:
       action: stop
-    Pow_music:
+  mode_miked_started:
+    Randomizer:
       action: stop
-  miked_start:
     makeSomeNoise_music:
       action: play
       bus: music
       fade_in: 300ms
       events_when_stopped: play_random_song
-    Randomizer:
-      action: stop
     play_random_song:
       action: stop
     brassmonkey_music:
-      action: stop
-    Pow_music:
       action: stop
