@@ -40,6 +40,7 @@ timers:
         event: s_right_lower_pop_active
         value: 1
 
+#when the mode ends, this song ends right away
 sound_player:
   mode_miked_started:
     makeSomeNoise_music:

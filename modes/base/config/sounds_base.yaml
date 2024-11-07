@@ -13,15 +13,15 @@ sound_player:
       bus: music
       fade_in: 300ms
       events_when_stopped: play_random_song
-  mode_base_stopped:
-    Randomizer:
-      action: stop
-    play_random_song:
-      action: stop
-    brassmonkey_music:
-      action: stop
-    makeSomeNoise_music:
-      action: stop
+  #  mode_base_stopped:
+  #   Randomizer:
+  #     action: stop
+  #   play_random_song:
+  #     action: stop
+  #   brassmonkey_music:
+  #     action: stop
+  #   makeSomeNoise_music:
+  #     action: stop
   mode_brassmonkey_started:
     brassmonkey_music:
       action: play
@@ -35,6 +35,5 @@ sound_player:
   mode_miked_started:
     Randomizer:
       action: stop
-      bus: music
     play_random_song:
       action: stop
