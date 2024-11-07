@@ -14,11 +14,6 @@ sound_player:
       fade_in: 300ms
       events_when_stopped: play_random_song
   mode_brassmonkey_started:
-    brassmonkey_music:
-      action: play
-      bus: music
-      fade_in: 300ms
-      events_when_stopped: play_random_song
     Randomizer:
       action: stop
     play_random_song:

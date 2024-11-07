@@ -16,7 +16,8 @@ counters:
     persist_state: true
     events_when_complete: brassmonkey_start
     debug: true
-    restart_events: ball_started, mode_brassmonkey_stopped
+    disable_on_complete: false
+    reset_on_complete: true
 
 variable_player:
   logicblock_brassmonkey_counter_updated:

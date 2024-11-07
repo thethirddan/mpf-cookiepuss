@@ -31,6 +31,14 @@ variable_player:
     score: current_player.brassmonkey_multiplier * 1000|block
   orbits_hit:
     score: current_player.brassmonkey_multiplier * 1000|block
+
+sound_player:
+  mode_brassmonkey_started:
+    brassmonkey_music:
+      action: play
+      bus: music
+      fade_in: 300ms
+      events_when_stopped: play_random_song
 # when we get lights, light all ramps and orbits
 # light super jackpot flashing on 5th ramp/orbit
 # jackpots are ramps and orbits
