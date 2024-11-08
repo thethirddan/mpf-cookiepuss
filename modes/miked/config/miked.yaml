@@ -45,6 +45,5 @@ sound_player:
   mode_miked_started:
     makeSomeNoise_music:
       action: play
-      bus: music
       fade_in: 300ms
       events_when_stopped: play_random_song

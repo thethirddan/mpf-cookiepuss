@@ -36,7 +36,6 @@ sound_player:
   mode_brassmonkey_started:
     brassmonkey_music:
       action: play
-      bus: music
       fade_in: 300ms
       events_when_stopped: play_random_song
 # when we get lights, light all ramps and orbits
